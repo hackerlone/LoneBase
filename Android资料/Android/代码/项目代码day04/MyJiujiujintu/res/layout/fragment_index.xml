@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.mpqi.myjiujiujintu.widget.ObservableScrollView
+        android:id="@+id/fragment_index_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dip" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/viewGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/fragment_index_topbars" />
+
+            <View style="@style/main_line_below" />
+
+            <View style="@style/main_line" />
+
+            <include layout="@layout/fragment_index_phone" />
+
+            <View style="@style/main_line_below" />
+
+            <View style="@style/main_line" />
+
+            <include layout="@layout/fragment_index_theme" />
+
+            <View style="@style/main_line_below" />
+
+            <View style="@style/main_line" />
+        </LinearLayout>
+    </com.mpqi.myjiujiujintu.widget.ObservableScrollView>
+
+    <LinearLayout
+        android:id="@+id/fragment_index_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/fragment_index_top_location_img"
+            style="@style/maintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mainpage_location_white_bg" />
+
+        <TextView
+            android:id="@+id/fragment_index_top_location_text"
+            style="@style/maintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成都"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/fragment_index_top_location_edt"
+            style="@style/maintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_radius3"
+            android:hint="马尔代夫"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            android:textSize="13dip" />
+
+        <ImageView
+            android:id="@+id/fragment_index_top_call"
+            style="@style/maintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mainpage_call_white_bg" />
+    </LinearLayout>
+
+</FrameLayout>

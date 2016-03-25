@@ -1,0 +1,21 @@
+日期：
+目标：
+1、了解环境搭建的方式
+2、了解SDK环境结构目录
+3、记忆Android的架构图
+内容：
+1、Android环境配置
+1.1、adt 
+    离线包  ADT-23.0.7
+    在线地址 （谷歌，国内无法使用）
+1.2、sdk
+     sdk maneger 国内镜像网站配置方式
+     http://www.androiddevtools.cn/
+1.3、genymotion 配置和使用
+     genymotion-2.5.2 安装，注册
+     下载模拟器，配置密度分辨率
+     安装Genymotion-ARM-Translation_v1.1  （对cpu 的更新）
+2、hello world
+2.1 创建第一个Android application 并运行
+3、SDK 目录结构
+4、Android 架构图

@@ -1,0 +1,15 @@
+日期：
+目标：
+1、掌握 Intent 概念
+2、掌握 IntentFilter 概念
+3、了解 AndroidMainifest 配置文件
+内容：
+1、Intent含义
+2、Intent组成部分
+3、Intent在寻找目标组件时有两种方法
+4、Intent封装了他要执行的动作属性：Action和Data
+5、Intent的实现策略
+   5.1、intent寻找目标组件的方式有两种
+   5.2、Intent Filter进行过滤时通常考虑三个属性
+6、AndroidMainifest.xml 配置
+7、实现拨打电话

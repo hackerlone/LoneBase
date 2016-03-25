@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_back_sel"
+        android:text="我是按钮1我是按钮1我是按钮1我是按钮1我是按钮1我是按钮1我是按钮1" />
+
+    <Button
+        android:id="@+id/button_second01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/bierde_32"
+        android:drawableTop="@drawable/bierde_33"
+        android:onClick="myOnClick"
+        android:text="我是按钮1" />
+
+    <ImageButton
+        android:id="@+id/button_second05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:onClick="myOnClick"
+        android:src="@drawable/bierde_03" />
+
+    <Button
+        android:id="@+id/button_second02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:drawableRight="@drawable/bierde_32"
+        android:drawableTop="@drawable/bierde_33"
+        android:onClick="myOnClick"
+        android:text="我是按钮2" />
+
+    <Button
+        android:id="@+id/button_second03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:drawableRight="@drawable/bierde_32"
+        android:drawableTop="@drawable/bierde_33"
+        android:onClick="myOnClick"
+        android:text="我是按钮3" />
+
+    <Button
+        android:id="@+id/button_second04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:drawableRight="@drawable/bierde_32"
+        android:drawableTop="@drawable/bierde_33"
+        android:onClick="myOnClick"
+        android:text="我是按钮4" />
+
+</LinearLayout>

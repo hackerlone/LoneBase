@@ -1,0 +1,14 @@
+日期：
+目标：
+1、掌握SharedPreferences使用方法
+内容：
+1、SharedPreferences 概述
+2、SharedPreferences 文件
+   2.1、文件存储位置
+   2.2、文件存储形式
+   2.3、文件格式
+3、Context.getSharedPreferences方法获取SharedPreferences对象
+4、Editor对象
+   4.1、插入、删除、修改、情况
+   4.2、获取
+5、sqlite query，rawquery 查询

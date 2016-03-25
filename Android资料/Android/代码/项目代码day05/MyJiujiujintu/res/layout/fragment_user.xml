@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.mpqi.myjiujiujintu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/mine"
+        android:textSize="17dip" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 登录注册按钮 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_user_niu_da_tou_growth" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/user_btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:background="@drawable/bg_green_radius5"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:text="@string/login"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/user_btn_regist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="40dip"
+                        android:background="@drawable/bg_orange_radius5"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:text="@string/register"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <com.mpqi.myjiujiujintu.widget.MaskImage
+                    android:id="@+id/user_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    maskimage:image="@drawable/defualthead"
+                    maskimage:mask="@drawable/headmask" />
+            </FrameLayout>
+            <!-- 横向导航 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@drawable/icon_user_tongtuanliao"
+                        android:text="@string/tongtuanliao"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@drawable/icon_user_wodedingdan"
+                        android:text="@string/wodedingdan"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@drawable/icon_user_shangcheng"
+                        android:text="@string/shangcheng"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="8dip"
+                        android:drawableTop="@drawable/icon_user_wodeshoucang"
+                        android:text="@string/wodeshoucang"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <View style="@style/main_line" />
+
+            <!-- 纵向内容选项区域 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/user_item_linearlayout" >
+
+                    <ImageView
+                        style="@style/user_item_title_img"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_user_wodexiaojinku" />
+
+                    <TextView
+                        style="@style/user_title_text"
+                        android:layout_weight="1"
+                        android:text="@string/wodexiaojinku" />
+
+                    <TextView
+                        style="@style/user_title2_text"
+                        android:layout_weight="0"
+                        android:drawablePadding="15dip"
+                        android:text="@string/diyongquan_lvyouquan" />
+                </LinearLayout>
+
+                <View
+                    style="@style/main_line"
+                    android:layout_marginLeft="55dip" />
+
+                <LinearLayout style="@style/user_item_linearlayout" >
+
+                    <ImageView
+                        style="@style/user_item_title_img"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_user_huodong" />
+
+                    <TextView
+                        style="@style/user_title_text"
+                        android:layout_weight="1"
+                        android:text="@string/huodong" />
+
+                    <TextView
+                        style="@style/user_title2_text"
+                        android:layout_weight="0"
+                        android:drawablePadding="15dip"
+                        android:text="@string/huodong_quanyi" />
+                </LinearLayout>
+
+                <View
+                    style="@style/main_line"
+                    android:layout_marginLeft="55dip" />
+
+                <LinearLayout style="@style/user_item_linearlayout" >
+
+                    <ImageView
+                        style="@style/user_item_title_img"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_user_ziliaoguanjia" />
+
+                    <TextView
+                        style="@style/user_title_text"
+                        android:layout_weight="1"
+                        android:text="@string/ziliaoguanjia" />
+
+                    <TextView
+                        style="@style/user_title2_text"
+                        android:layout_weight="0"
+                        android:drawablePadding="15dip"
+                        android:text="@string/gerenziliao_changyongziliao" />
+                </LinearLayout>
+
+                <View
+                    style="@style/main_line"
+                    android:layout_marginLeft="55dip" />
+
+                <LinearLayout style="@style/user_item_linearlayout" >
+
+                    <ImageView
+                        style="@style/user_item_title_img"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_user_shequ" />
+
+                    <TextView
+                        style="@style/user_title_text"
+                        android:layout_weight="1"
+                        android:text="@string/shequ" />
+
+                    <TextView
+                        style="@style/user_title2_text"
+                        android:layout_weight="0"
+                        android:drawablePadding="15dip"
+                        android:text="@string/zhaopian_youji_wenda" />
+                </LinearLayout>
+
+                <View
+                    style="@style/main_line"
+                    android:layout_marginLeft="55dip" />
+
+                <LinearLayout style="@style/user_item_linearlayout" >
+
+                    <ImageView
+                        style="@style/user_item_title_img"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_user_gengduo" />
+
+                    <TextView
+                        style="@style/user_title_text"
+                        android:layout_weight="1"
+                        android:text="@string/more" />
+
+                    <TextView
+                        style="@style/user_title2_text"
+                        android:layout_weight="0"
+                        android:drawablePadding="15dip"
+                        android:text="@string/xiugaimima_shezhi" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <Button
+                android:id="@+id/user_btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/bg_btn_red_stroke"
+                android:text="@string/safelogout"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

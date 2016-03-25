@@ -1,0 +1,5 @@
+1、使用actionBar实现下拉导航菜单
+2、理解掌握handler 、 thread 、 looper 之间的关系
+3、代码中实现，主线程与子线程之间的通信
+4、用语言描述handler与线程之间的关系
+5、（扩充）研究actionBar的xmind，实现tab导航的actionBar

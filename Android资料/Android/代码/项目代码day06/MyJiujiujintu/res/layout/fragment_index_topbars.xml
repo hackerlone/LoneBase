@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_index_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TableRow>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_group_bg"
+                android:text="@string/group_travel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_self_service_bg"
+                android:text="@string/selfhelp_travel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_ship_bg"
+                android:text="@string/cruise" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_drive_bg"
+                android:text="@string/drive" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_ticket_bg"
+                android:text="@string/ticket_home" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_visa_bg"
+                android:text="@string/ticket_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_hotel_bg"
+                android:text="@string/hotel" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_plane_bg"
+                android:text="@string/selfhelp_plane" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_train_ticket_bg"
+                android:text="@string/train_ticket" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_topbar"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/index_topbar_icon"
+                android:drawableTop="@drawable/icon_home_more_bg"
+                android:text="@string/jiujiu_server" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

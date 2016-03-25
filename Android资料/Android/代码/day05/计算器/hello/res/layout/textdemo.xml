@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment"
+        android:text="sdafjsajflasjdfkajsfjaksjdflkajdflajsdlkfjaslkdjflaskdf"
+        android:textSize="35dip" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转_内部匿名类" />
+    <Button
+        android:id="@+id/button_wai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转_外部" />
+    <Button
+        android:id="@+id/button_nei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转_内部类" />
+    <Button
+        android:id="@+id/button_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转_activity自身实现" />
+
+</LinearLayout>

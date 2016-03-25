@@ -1,0 +1,7 @@
+1、使用BaseAdapter，将数据加载到listView 和（ GridView 可选）中。
+2、ListView 与 SscrollView冲突解决
+3、OnItemClickListener 与 OnItemLongClickListener 的事件使用，区别三个Adapter 中的 position和id的区别意义。
+
+扩充：
+4、理解homework07登录的完整业务流程。
+5、完成homework07中余下的部分（listview 和 注册）。

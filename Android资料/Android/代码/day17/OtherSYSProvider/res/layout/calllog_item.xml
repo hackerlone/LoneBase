@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="8dip" >
+
+    <TextView
+        android:id="@+id/phonename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="王某某"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phonename"
+        android:layout_below="@id/phonename"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:text="13000000000"
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/phonetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phone"
+        android:layout_below="@id/phone"
+        android:layout_marginTop="3dip"
+        android:text="未接" />
+
+    <TextView
+        android:id="@+id/phonetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/phonetype"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/phonetype"
+        android:text="9月9日16:42:50"
+        android:textSize="12dip" />
+
+    <ImageButton
+        android:id="@+id/phonecall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@null"
+        android:src="@drawable/bluecall" />
+
+</RelativeLayout>

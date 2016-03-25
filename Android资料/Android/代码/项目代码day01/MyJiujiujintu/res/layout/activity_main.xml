@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.mpqi.myjiujiujintu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <com.mpqi.myjiujiujintu.widget.MaskImage
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            maskimage:image="@drawable/mainbarbackground_green"
+            maskimage:mask="@drawable/mainbar1" />
+        <com.mpqi.myjiujiujintu.widget.MaskImage
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            maskimage:image="@drawable/mainbarbackground_norlmal"
+            maskimage:mask="@drawable/mainbar2" />
+    </LinearLayout>
+
+</LinearLayout>

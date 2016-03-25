@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:background="#FE9438">
+
+    <ImageView
+        android:id="@+id/simple_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_margin="12dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/simple_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dip" />
+
+        <TextView
+            android:id="@+id/simple_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:textSize="18dip" />
+    </LinearLayout>
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:src="@drawable/bierde_46"
+        android:gravity="right"
+        android:background="#c3ab90"/>
+</LinearLayout>

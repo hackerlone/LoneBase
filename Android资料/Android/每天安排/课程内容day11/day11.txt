@@ -1,0 +1,10 @@
+日期：
+目标：
+1、掌握ViewPager 的使用
+内容：
+1、ViewPager 简介
+   1.1、所在包与支持版本问题
+2、ViewPager 的基本使用方式
+3、ViewPager 常用Adapter
+4、PagerTitleStrip  PagerTabStrip
+5、OnPageChangeListener 通过监听计算标题栏下标偏移量

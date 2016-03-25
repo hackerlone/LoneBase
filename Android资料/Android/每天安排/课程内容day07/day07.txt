@@ -1,0 +1,24 @@
+日期：
+目标：
+1、掌握Activity 的生命周期，并能默写出生命周期图
+2、了解Acitivty的2种启动方式
+3、了解Activity  4种启动模式
+4、掌握 application 的配置
+内容：
+1  四大组件之一 Activity
+    1.1  Activity  2种启动方式（start 和 startforresult）
+AActivity
+   startActivityForResult(intent, int);
+   
+@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {}
+
+BActivity
+    Intent intent = new Intent();
+    intent.putExtra("content", "abasdasd");
+    setResult(int, intent);
+    finish();
+
+    1.2  Activity  4种启动模式
+    1.3  Activity  生命周期
+2  application 配置文件介绍

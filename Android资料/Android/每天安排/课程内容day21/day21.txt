@@ -1,0 +1,14 @@
+日期：
+目标：
+1、掌握actionBar的基本使用方式
+2、掌握actionBar下拉导航菜单使用方式
+3、了解handler、thread之间的关系
+内容：
+1、actionBar简介
+2、actionBar下拉导航
+3、handler的概念
+   3.1、looper消息队列
+4、主线程与子线程的通信方式
+   4.1、sendMessage
+   4.2、post
+5、HandlerThread 的使用和创建

@@ -1,0 +1,6 @@
+1、练习ListView OnItemClickListener 中button按钮事件冲突的解决方法
+2、三种adapter中的notifyDataSetChanged() 的使用
+3、SimpleCursorAdapter 的简单使用
+
+扩展
+4、利用 SimpleCursorAdapter 显示出联系人、电话或更多的信息

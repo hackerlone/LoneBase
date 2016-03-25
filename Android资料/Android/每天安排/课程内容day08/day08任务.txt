@@ -1,0 +1,4 @@
+1、练习arrayAdapter、simpleAdapter（理解掌握每个参数的含义）
+2、熟练使用ListView 的常用属性
+3、练习使用GridView
+4、将已有用户和新注册用户都用ListView 和 GridView 展示出来（基于day07的作业）

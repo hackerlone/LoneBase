@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20000"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20001"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20002"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20003"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20004"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20005"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20006"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20007"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20008"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20009"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20010"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20011"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20012"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20013"
+        android:duration="150">
+    </item>
+    <item
+        android:drawable="@drawable/pull_refresh_feiji_flying_20014"
+        android:duration="150">
+    </item>
+
+</animation-list>

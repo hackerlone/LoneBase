@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">testActionBarDemo</string>
+    <string name="one">first</string>
+    <string name="two">second</string>
+    <string name="three">third</string>
+
+</resources>

@@ -1,0 +1,14 @@
+日期：
+目标：
+1  BaseAdapter 使用
+2  ListView 与 SscrollView冲突解决
+3  OnItemClickListener 与 OnItemLongClickListener
+内容：
+1、BaseAdapter 
+   1.1、继承实现BaseAdapter 
+   1.2、BaseAdapter 复写重要函数
+   1.3、LayoutInfalter 容器的使用
+2、ListView 与 SscrollView冲突解决
+   2.1、手动计算ListView Height
+3、OnItemClickListener 与 OnItemLongClickListener
+4、ListView OnItemClickListener 中button按钮事件冲突

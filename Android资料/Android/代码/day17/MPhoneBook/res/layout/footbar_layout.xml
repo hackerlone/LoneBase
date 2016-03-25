@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightblue93"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/gocall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="1dip"
+        android:drawableTop="@drawable/call_btn"
+        android:onClick="footbarOnclick"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="拨号"
+        android:textSize="14dip" />
+
+    <Button
+        android:id="@+id/gocalllog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="1dip"
+        android:drawableTop="@drawable/calllog_btn"
+        android:onClick="footbarOnclick"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="通话记录"
+        android:textSize="14dip" />
+
+    <Button
+        android:id="@+id/gotelephonedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="1dip"
+        android:drawableTop="@drawable/telephonedir_btn"
+        android:onClick="footbarOnclick"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="电话簿"
+        android:textSize="14dip" />
+
+    <Button
+        android:id="@+id/gophonenumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="1dip"
+        android:drawableTop="@drawable/phonenumbers_btn"
+        android:onClick="footbarOnclick"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="联系人"
+        android:textSize="14dip" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+日期：
+目标：
+1、掌握leancloud查询方式
+内容：
+1、基本查询
+   1.1、whereEqualTo
+2、查询条件
+   2.1、whereNotEqualTo
+   2.2、whereGreaterThan、whereLessThan、whereLessThanOrEqualTo、whereGreaterThanOrEqualTo
+   2.3、orderByAscending、orderByDescending
+   2.4、setLimit、setSkip
+   2.5、whereContainedIn、whereNotContainedIn
+3、查询字符串值
+   3.1、whereStartsWith、whereContains、whereEndsWith
+   3.2、whereMatches
+   3.3、whereContainsAll
+4、查询对象个数
+   4.1、countInBackground
+   4.2、whereMatchesQuery、whereDoesNotMatchQuery
+5、关系查询
+   5.1、whereMatchesQuery
+   5.2、whereExists
+6、缓存查询与缓存机制、策略
+7、符合查询
+   7.1、AVQuery.or
+8、删除查询结果
+   8.1、query.deleteAll();
+9、CQL查询
+   9.1、doCloudQueryInBackground

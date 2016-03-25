@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- fromAlpha 从某透明度开始
+     toAlpha 到某透明度结束
+     duration 持续的时间
+     0.0 全透明  1.0 不透明-->
+ <alpha android:fromAlpha="0.0"
+     android:toAlpha="1.0"
+     android:duration="3000"/>    
+
+</set>

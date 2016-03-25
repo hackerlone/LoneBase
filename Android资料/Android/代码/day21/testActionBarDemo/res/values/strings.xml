@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">试验下拉菜单</string>
+	<string name="one">第一个</string>
+	<string name="two">第二个</string>
+	<string name="three">第三个</string>
+	<string name="title_section1">天枰座</string>
+	<string name="title_section2">巨蟹座</string>
+	<string name="title_section3">双鱼座</string>
+</resources>

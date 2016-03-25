@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_index_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/top_location_text"
+        style="@style/maintop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成都"
+        android:textColor="#ffffff" 
+        android:drawableRight="@drawable/icon_city_triangle_white"
+        android:onClick="searchOnclick"
+        android:clickable="true"
+        android:drawablePadding="5dip"/>
+
+    <EditText
+        android:id="@+id/top_location_edt"
+        style="@style/maintop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_radius3"
+        android:hint="马尔代夫"
+        android:paddingBottom="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_text"
+        android:textSize="13dip" />
+
+    <ImageView
+        android:id="@+id/top_call"
+        style="@style/maintop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mainpage_call_white_bg" />
+
+</LinearLayout>

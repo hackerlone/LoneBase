@@ -1,0 +1,2 @@
+1、完成计算器（包括功能）。使用shape与selector做点击修饰
+2、复习shape  selector

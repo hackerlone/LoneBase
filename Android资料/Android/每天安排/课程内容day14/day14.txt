@@ -1,0 +1,19 @@
+日期：
+目标：
+1、掌握service概念。
+2、掌握service的两种启动方。
+3、掌握service的生命周期
+4、了解MediaPlayer音乐播放方法。
+5、了解Android中asset文件夹和raw文件夹区别
+
+内容：
+1、四大组件之二  service 服务，Context派生类，可调用getResources()  getContentResolver()
+2、service分类
+3、service的生命周期
+4、service的各函数
+5、service的两种启动方式实践
+   5.1、intent 意图设置，action设置。
+   5.2、startService  stopService
+   5.3、bindService   unBindService 
+6、使用方法--简单音乐播放实例
+7、Android中asset文件夹和raw文件夹区别

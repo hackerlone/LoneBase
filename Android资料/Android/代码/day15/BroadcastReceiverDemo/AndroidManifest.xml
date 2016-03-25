@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpqi.broadcastreceiverdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.mpqi.broadcastreceiverdemo.broadcast.MyReceiver" >
+            <intent-filter>
+                <action android:name="org.mpqi.broad.MYRECEIVER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mpqi.broadcastreceiverdemo.broadcast.OrderedReceive1" >
+            <intent-filter android:priority="20" >
+                <action android:name="org.mpqi.broad.ORDERRECEIVER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mpqi.broadcastreceiverdemo.broadcast.OrderedReceive2" >
+            <intent-filter android:priority="15" >
+                <action android:name="org.mpqi.broad.ORDERRECEIVER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

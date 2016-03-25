@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="action_list">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+    </string-array>
+
+</resources>

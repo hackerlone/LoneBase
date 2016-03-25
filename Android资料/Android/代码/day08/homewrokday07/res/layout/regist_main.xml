@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5DBFE" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/regist_head"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:src="@drawable/bierde_75" />
+
+        <EditText
+            android:id="@+id/regist_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dip"
+            android:hint="请输入用户名" />
+
+        <EditText
+            android:id="@+id/regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dip"
+            android:hint="请输入昵称" />
+
+        <EditText
+            android:id="@+id/regist_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="15dip"
+            android:hint="请输入密码"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/regist_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="15dip"
+            android:hint="请再次输入密码"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/regist_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:drawablePadding="15dip"
+            android:hint="签名内容"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/regist_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="注册" />
+    </LinearLayout>
+
+</ScrollView>

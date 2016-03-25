@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="main_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@drawable/bg_gray_with_line</item>
+    </style>
+
+    <style name="main_line_below" parent="main_line">
+        <item name="android:layout_marginBottom">10dip</item>
+    </style>
+
+    <!-- 我的旅图模块 -->
+    <style name="user_item_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="user_title_img">
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <style name="user_item_title_img" parent="user_title_img">
+        <item name="android:layout_margin">5dip</item>
+    </style>
+
+    <style name="user_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:textSize">13dip</item>
+    </style>
+
+    <style name="user_title2_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_10</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:drawableRight">@drawable/arrow_gray_right_default</item>
+    </style>
+
+    <!-- 主页 -->
+    <style name="maintop">
+        <item name="android:layout_marginRight">10dip</item>
+    </style>
+
+    <style name="main_index_content">
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:paddingRight">3dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="main_line_vertical">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bg_gray_with_line</item>
+    </style>
+
+    <style name="index_topbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="index_topbar_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="index_topbar_icon_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="index_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="index_title_text_more">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/main_mask</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">20dip</item>
+        <item name="android:textColor">@color/green_31A959</item>
+        <item name="android:text">@string/more</item>
+    </style>
+
+    <style name="index_company_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+</resources>

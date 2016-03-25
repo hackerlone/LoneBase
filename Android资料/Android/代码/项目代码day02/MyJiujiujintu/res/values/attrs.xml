@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义控件的属性申明标签 -->
+    <declare-styleable name="MaskImage">
+
+        <!-- name 标签名字  format 标签内容格式     reference 引用格式 -->
+        <attr name="image" format="reference" />
+        <attr name="mask" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,4 @@
+1、复习ContentProvider概念
+2、梳理ContentProvider、ContentResolver的关系与使用方式。
+3、复习ContentValues的使用方式
+4、创建两个app，实现课堂的代码（两个app的数据共享通讯）

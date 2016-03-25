@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:scrollbars="none" >
+
+        <TextView
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:id="@+id/numtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/lightbluef0"
+            android:textSize="40dip" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/numx"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_gravity="right"
+        android:layout_margin="15dip"
+        android:background="@drawable/callnum_center"
+        android:onClick="callNum"
+        android:text=" X " />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_weight="0" >
+
+        <TableRow android:layout_margin="1dip" >
+
+            <Button
+                android:id="@+id/num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_lefttop"
+                android:onClick="callNum"
+                android:text=" 1 " />
+
+            <Button
+                android:id="@+id/num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 2 " />
+
+            <Button
+                android:id="@+id/num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_righttop"
+                android:onClick="callNum"
+                android:text=" 3 " />
+        </TableRow>
+
+        <TableRow android:layout_margin="1dip" >
+
+            <Button
+                android:id="@+id/num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 4 " />
+
+            <Button
+                android:id="@+id/num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 5 " />
+
+            <Button
+                android:id="@+id/num6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 6 " />
+        </TableRow>
+
+        <TableRow android:layout_margin="1dip" >
+
+            <Button
+                android:id="@+id/num7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 7 " />
+
+            <Button
+                android:id="@+id/num8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 8 " />
+
+            <Button
+                android:id="@+id/num9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 9 " />
+        </TableRow>
+
+        <TableRow android:layout_margin="1dip" >
+
+            <Button
+                android:id="@+id/numxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" * " />
+
+            <Button
+                android:id="@+id/num0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" 0 " />
+
+            <Button
+                android:id="@+id/numjing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/callnum_center"
+                android:onClick="callNum"
+                android:text=" # " />
+        </TableRow>
+
+        <Button
+            android:id="@+id/numcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/callnum_bottom"
+            android:onClick="callNum"
+            android:text=" CALL " />
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray" />
+
+    <include layout="@layout/footbar_layout" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_second01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:text="我是按钮1"
+        android:drawableTop="@drawable/bierde_33"
+        android:drawableRight="@drawable/bierde_32"
+        android:onClick="myOnClick"/>
+    
+    <ImageButton
+        android:id="@+id/button_second05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:src="@drawable/bierde_03"
+         android:onClick="myOnClick" />
+    <Button
+        android:id="@+id/button_second02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:text="我是按钮2"
+        android:drawableTop="@drawable/bierde_33"
+        android:drawableRight="@drawable/bierde_32"
+         android:onClick="myOnClick"/>
+    <Button
+        android:id="@+id/button_second03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:text="我是按钮3"
+        android:drawableTop="@drawable/bierde_33"
+        android:drawableRight="@drawable/bierde_32"
+         android:onClick="myOnClick"/>
+    <Button
+        android:id="@+id/button_second04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bierde_31"
+        android:text="我是按钮4"
+        android:drawableTop="@drawable/bierde_33"
+        android:drawableRight="@drawable/bierde_32"
+         android:onClick="myOnClick"/>
+    
+
+    
+</LinearLayout>

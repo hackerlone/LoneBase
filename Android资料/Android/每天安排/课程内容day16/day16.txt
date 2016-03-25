@@ -1,0 +1,20 @@
+日期：
+目标：
+1、了解Content Providers 的概念
+2、掌握Content Providers 数据共享机制
+3、掌握Content Providers 数据共享使用方法
+内容：
+1、四大组件之四Content Providers作为应用程序之间唯一的共享数据的途径的基本概念。
+2、数据模型
+3、Content Provider URI
+4、Content Provider 提供的函数
+5、实现过程
+6、数据查询
+7、创建方式
+8、两个应用实例
+   8.1、应用1 DBCotentProvieder：提供数据，定义URI，暴露接口
+   8.2、应用2 mineContentProvider：使用应用1 的URI 操作数据
+9、ContentResolver 调用数据接口对象
+10、ContentValues 包裹数据的方式
+11、SQLiteOpenHelper 简单使用
+12、SQLiteDeveloper 工具使用（DDMS 导出数据库文件）

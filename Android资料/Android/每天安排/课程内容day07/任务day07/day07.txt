@@ -1,0 +1,4 @@
+1、复习activity的生命周期理论，默写activity生命周期图，用代码试验activity生命周期
+2、复习activity的4种启动模式，并在代码中试验前三种
+3、模拟登录注册注销业务，练习startActivityForResult
+4、完成arrayAdapter的练习

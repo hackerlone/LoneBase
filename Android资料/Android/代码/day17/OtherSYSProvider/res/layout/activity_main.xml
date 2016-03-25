@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="调用系统浏览器" />
+
+    <Button
+        android:id="@+id/calllog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="通话记录" />
+     <Button
+        android:id="@+id/telephonedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="电话簿" />
+
+</LinearLayout>

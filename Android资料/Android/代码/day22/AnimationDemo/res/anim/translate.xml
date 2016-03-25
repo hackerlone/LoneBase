@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator" >
+
+    <!--
+    fromXDelta 开始的X坐标   fromYDelta 开始的Y坐标
+    toXDelta 结束的X坐标  toYDelta 结束的Y坐标
+    duration 动画持续时长
+    -->
+    <translate
+        android:duration="2000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="200"
+        android:toYDelta="300"/>
+
+</set>

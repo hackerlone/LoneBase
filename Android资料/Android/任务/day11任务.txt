@@ -1,0 +1,4 @@
+1、练习基本的ViewPager PagerTitleStrip  PagerTabStrip 结合起来的使用方法
+2、练习OnPageChangeListener 通过监听计算标题栏下标偏移量的ViewPager 
+3、为ViewPager中的每个View 添加一些控件与监听事件
+4、完成有小圆点的图片横滑

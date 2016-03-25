@@ -1,0 +1,4 @@
+1、复习使用sqlite 查询
+2、使用sharedPrefrences，观察文件内容变化，存放位置
+3、结合sqlite和SharedPreferences 模拟记事本
+4、继续完成通讯录

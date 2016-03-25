@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="ifRoom"
+        android:title="搜索"/>
+    <item
+        android:id="@+id/menu_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="分享"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:showAsAction="never"
+        android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/menu_theme"
+                android:showAsAction="always|withText"
+                android:title="更换主题"/>
+            <item
+                android:id="@+id/menu_system"
+                android:showAsAction="always|withText"
+                android:title="系统设置"/>
+        </menu>
+    </item>
+</menu>

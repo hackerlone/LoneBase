@@ -1,0 +1,18 @@
+日期：
+目标：
+1、掌握四种变换动画特性及使用方式
+2、掌握帧动画特性及使用方式
+3、了解控件动画及属性动画
+内容：
+1、变换动画
+   1.1、共同属性
+   1.2、变换动画的xml配置方式
+   1.3、AnimationUtils
+   1.4、Animation
+2、AlphaAnimation 透明度渐变动画
+3、RotateAnimation 旋转动画
+4、ScaleAnimation  缩放动画
+5、TranslateAnimation 位移动画
+6、Frame Animation 帧动画
+7、Layout Animation 控件动画
+8、Property Animation  属性动画

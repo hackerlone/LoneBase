@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 定位城市  从上到下退出 -->
+    <objectAnimator
+        android:duration="500"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:propertyName="translationY"
+        android:valueFrom="0dp"
+        android:valueTo="1000dp"
+        android:valueType="floatType" />
+
+</set>

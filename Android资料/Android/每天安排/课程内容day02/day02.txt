@@ -1,0 +1,34 @@
+日期：
+目标：
+1、掌握 Android application 创建方式
+2、掌握 Android application 项目目录结构
+3、理解 View 与 ViewGroup 基本概念与关系
+4、掌握 Android 的五大布局（线性、绝对、相对、表格、帧）
+内容：
+1、Android application 项目创建
+   三个名称的意义
+   版本选择
+   图标选择
+   系统创建空白  Empty Activity
+2、Android application 项目目录结构
+   src  
+   gen
+   assets
+   bin
+   libs
+   res →  drawable layout  values 
+
+3  五大布局
+3.1  LinearLayout  线性布局 （常用）
+        vertical 竖排列  horizontal  横排列
+3.2  FrameLayout  帧布局 
+3.3  TableLayout  表格布局
+        TableRow 不用属性修饰
+3.4  RelativeLayout，相对布局
+        属性配置，找相对位置
+3.5  AbsoluteLayout，绝对位置布局
+        坐标
+4 公共属性
+android:layout_gravity 相对于父控件本身的位置
+android:gravity 控件本身内容的位置
+

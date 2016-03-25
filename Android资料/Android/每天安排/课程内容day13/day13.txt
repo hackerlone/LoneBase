@@ -1,0 +1,31 @@
+日期：
+目标：
+1、了解AlertDialog.Builder类，创建不同样式的对话框。
+2、掌握AlertDialog.Builder类中的常用函数。
+3、掌握DialogInterface.OnClickListener监听事件。
+
+内容：
+1、AlertDialog.Builder类
+   1.1、常用方法
+   1.2、按键监听事件
+   1.3、三个按钮的设置
+2、一般对话框
+   2.1、setMessage
+   2.2、OnClickListener  按钮监听中，which代表按钮（-1，2，-3）
+3、列表对话框
+   3.1、setItems
+   3.2、OnClickListener  按钮监听中，which代表下标
+4、单选按钮对话框
+   4.1、setSingleChoiceItems
+   4.2、OnClickListener  按钮监听中，which代表下标
+5、多选列表对话框
+   5.1、setMultiChoiceItems
+   5.2、数据源长度与选中状态集合长度一致
+   5.3、OnClickListener  按钮监听中，which代表下标
+6、自定义AlertDialog对话框式样
+   6.1、setView
+7、带进度条的对话框ProgressDialog
+8、FragmentDialog的使用
+   8.1、重写onCreateView创建Dialog
+   8.2、重写onCreateDialog创建Dialog
+   8.3、传递数据给Activity

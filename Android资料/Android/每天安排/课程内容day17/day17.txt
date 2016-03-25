@@ -1,0 +1,17 @@
+日期：
+目标：
+1、了解Android消息内容provider
+2、利用ContentResolver 实现通讯录APP
+内容：
+1、Android消息内容provider
+2、ContentResolver 获取方式
+3、Browser：浏览器调用
+4、CallLog：通话记录
+5、Contacts：联系人
+6、MediaStore:多媒体数据库
+7、Settings：系统属性
+8、通讯录APP
+   8.1、拨打电话
+   8.2、通话记录
+   8.3、通讯录
+   8.4、联系人

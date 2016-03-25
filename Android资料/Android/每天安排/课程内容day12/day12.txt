@@ -1,0 +1,21 @@
+日期：
+目标：
+1、ViewPager 与 Fragment 的实战使用技巧
+2、Fragment 的基本使用与认识
+3、Fragment 的通信
+内容：
+1、ViewPager 与 Fragment 的实战
+   1.1、关于Frgment的包引用都是android.support.v4.app
+   1.2、FrgamentActivity 与 Activity 的区别
+   1.3、FragmentPagerAdapter 的创建
+   1.4、Fragment 的第一个test 子类(复写 onCreateView)的实现
+   1.5、getSupportFragmentManager() 与 getFragmentManager()
+2、Fragment 的基本使用与认识
+   2.1、Fragment的产生与介绍
+   2.2、使用支持库
+   2.3、静态的使用Fragment
+   2.4、动态的使用Fragment
+   2.5、Fragment的生命周期
+3、Fragment与Activity通信
+   3.1、基本通信方式
+   3.2、通信的最佳实践

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/actionbar_xialadaohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="下拉导航" />
+
+    <Button
+        android:id="@+id/actionbar_caozuoshitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="操作视图" />
+
+    <Button
+        android:id="@+id/actionbar_daohangxuanxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myOnclick"
+        android:text="导航选项标签" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

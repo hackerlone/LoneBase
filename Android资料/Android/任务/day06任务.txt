@@ -1,0 +1,3 @@
+1、整理今天intent 、 AndroidManifest结构 的学习笔记
+2、重新复习课堂的代码，理解和掌握action category data 等的使用方式
+3、实现电话拨号盘（要求界面设计合理、美观，并使用selector 与 shape）
