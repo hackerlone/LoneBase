@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+.reg_log_box{
+    width: 490px;
+    color: #777;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin: 0 0 0 -245px;
+    z-index: 1001;
+    display: none;
+}
+.login_box_X .error{
+    font-size: 12px;
+    color: #ff3524;
+    visibility: hidden;
+}
+.input_visible{
+    visibility: visible;
+}
+.go_home{
+    position: absolute;bottom:102%;left:0;
+    width: 144px;
+    height: 44px;
+    background: url('/static/img/logo.png');
+}
+.close_login{
+    position: absolute;
+    bottom: 105%;right: 0;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.log_box{
+    width: 415px;
+    margin:44px auto 0;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+}
+.log_input{
+    width: 313px;
+    height:42px;
+    line-height: 42px;
+    padding: 0 0 0 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.log_content{
+    width: 330px;
+    margin: auto;
+    padding: 35px 0 0 0;
+}
+.login_inf{
+    width: 100%;
+}
+#login_btn,#reg_btn{
+    letter-spacing: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background:#0ac4ef;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    margin: 0 0 10px 0;
+}
+.login_jump{
+    position: relative;
+}
+.f_col{
+    color: #02a0e9;
+    cursor: pointer;
+}
+.look_pas{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.other_login{
+    padding-top: 15px;
+    border-top: 1px dashed #999;
+    text-align: center;
+    position: relative;
+    margin: 15px 0 0 0;
+}
+.other_link{
+    height: 70px;
+    width:100%;
+    margin: 0 auto;
+}
+.other_link>a{
+    display: inline-block;
+    width: 39px;
+    height:39px;
+    margin: 15px;
+}
+
+.icon_wb{
+    background:url('/static/img/weibo.png');
+}
+.icon_wb:hover{
+    background:url('/static/img/weibo_s.png');
+}
+.icon_qq{
+    background:url('/static/img/QQ.png');
+}
+.icon_qq:hover{
+    background:url('/static/img/QQ_s.png');
+}
+.icon_weixin{
+    background:url('/static/img/weixin.png');
+}
+.icon_weixin:hover{
+    background:url('/static/img/weixin_s.png');
+}
+
+.reg_box{
+    background-color: #fff;
+    border-radius: 15px;
+}
+.reg_content{
+    width: 330px;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.register_radio{
+    display: inline-block;
+    margin: 0 0 0 30px;
+}
+.company_pic{
+    margin-left: 60px;
+}
+.type_pic{
+    width: 100px;
+    height:100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.type_pic:hover{
+    border: 2px solid #00A9E0;
+    background-color: #fff;
+}
+.type_pic.active{
+    border: 2px solid #00A9E0;
+}
+.student{
+    background:#f8f8f8 url('/static/img/register01.png') no-repeat center;
+}
+.company{
+    background:#f8f8f8 url('/static/img/register02.png') no-repeat center;
+}
+.type_text{
+    font-size:20px;
+    color: #555555;
+    text-align:center;
+    line-height:38px;
+    font-weight: bold;
+}
+.has_account{
+    width: 100%;
+    text-align: right;
+    letter-spacing:1px;
+    margin: 5px 0 0 0;
+}
+.to_login{
+    color: #00A9E0;
+    cursor: pointer;
+}
+.reg_other_link{
+    width: 130%;
+    padding-top:10px;
+    border-top: 1px dashed #999;
+    text-align: center;
+    position:relative;
+    margin: 10px 0 0 -15%;
+}
+
+
+
+
+.reg_stup2{
+    width: 330px;
+    margin: auto;
+    padding: 30px 0;
+    display: none;
+}
+.test_mobile{
+    color: #333;
+    font-size: 18px;
+}
+.reg_step2_btn{
+    width: 330px;
+    height: 44px;
+    display: block;
+    background: #0ac4ef;
+    color: #f4f4f4;
+    border: none;
+    margin: 17px auto;
+    cursor: pointer;
+    font-size: 18px;
+}
+#phonenum{
+    width: 313px;
+    font-size: 16px;
+    line-height: 38px;
+    padding-left: 15px;
+    margin: 15px 0 0 0;
+}
+#smscode{
+    width: 140px;
+    padding: 14px 15px;
+    color:#000;
+    border:1px solid #ccc;
+    float: left;
+    font-size: 16px;
+}
+#sendbtn{
+    width: 141px;
+    height: 44px;
+    background:#0ac4ef;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 17px;
+    font-size: 16px;
+}
+
+
+
+.reg_step3{
+    padding: 50px 0 0 0;
+    display: none;
+}
+
+.back_btn{
+    width: 330px;
+    margin: auto;
+}
+.is_right{
+    display: block;
+    margin: 50px auto 20px;
+}
+.back_btn>a{
+    display: inline-block;
+    line-height: 44px;
+    width: 147px;
+    margin: 50px 7px;
+    text-align: center;
+    background:#0ac4ef;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.success{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.changetext{
+    color: #02a0e9;
+}
+

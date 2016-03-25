@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dip" >
+
+        <ImageButton
+            android:id="@+id/login_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@null"
+            android:onClick="btnOnClick"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="18dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/login_btn_jiujiu"
+            android:layout_width="155dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_left_corner_green_5dp"
+            android:onClick="btnOnClick"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:text="@string/login_by_jiujiu_user"
+            android:textColor="@color/white"
+            android:textSize="17dip" />
+
+        <Button
+            android:id="@+id/login_btn_dynamic"
+            android:layout_width="155dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_right_green_stroke_corner_5dp"
+            android:onClick="btnOnClick"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:text="@string/login_by_dynamic"
+            android:textColor="@color/white"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/bg_white_transetion_radius5"
+        android:padding="20dip" >
+
+        <TableRow
+            android:id="@+id/login_label_jiujiu"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/label_mail" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/login_id"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/login_label_people"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/icon_people_gray" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/login_id"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </TableRow>
+
+        <View
+            style="@style/main_line"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip" />
+
+        <TableRow android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:layout_weight="0"
+                android:src="@drawable/label_password" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/login_password"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+
+            <TextView
+                android:id="@+id/login_text_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0"
+                android:singleLine="true"
+                android:text="@string/send_dynamic_code"
+                android:textColor="@color/green_light_2"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/login_reset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="15dip"
+        android:layout_marginRight="25dip"
+        android:onClick="btnOnClick"
+        android:text="@string/reset_password"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:background="@drawable/bg_green_radius5"
+        android:onClick="btnOnClick"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="17dip" />
+
+    <Button
+        android:id="@+id/login_btn_regist"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:background="@drawable/bg_orage_radius5"
+        android:onClick="btnOnClick"
+        android:text="@string/login_register"
+        android:textColor="@color/white"
+        android:textSize="17dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/label_partner_login"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/social_share_icon_qq" />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:src="@drawable/social_share_icon_sina" />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/social_share_icon_wechat" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts-enterprise" extends="struts-default,struts2">
+		<action name="qy_*" class="qyAction" method="{1}">
+			<result name="getAllqy" type="">qy/show.jsp</result>
+			<result name="update" >qy/update.jsp</result>
+			<result name="updata" >qy/qye.jsp</result>
+			<result name="updatenew" >qy/qye.jsp</result>
+			<result name="addEnterprise" >qy/add.jsp</result>
+			<result name="addnow" >index.jsp</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,13 @@
+﻿
+/* 标签样式 */
+#div1 {position:relative; width:200px; height:200px; margin: 20px auto 0; }
+#div1 a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#000; font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#div1 a:hover {border: 2px solid #666; background:none; }
+
+/* 标签字体样式 */
+#div1 .tblogblue {color: blue;}
+#div1 .tblogred {color: red;}
+#div1 .tblogorange {color:#F90;}
+#div1 .tblogpink {color: #F6F;}
+#div1 .tblogblack {color: #333;}
+#div1 .tblogpurple {color: #90F;}

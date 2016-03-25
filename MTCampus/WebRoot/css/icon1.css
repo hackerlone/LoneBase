@@ -1,0 +1,53 @@
+.icon, .icons, i {
+    background-image: url("images/sprite_1.2.2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: 0;
+    zoom: 1;
+    margin-bottom: -1px
+}
+
+@media not all, (min-resolution: 192dpi) {
+    .icon, .icons, i {
+        background-image: url("images/sprite_1.2.2@2x.png");
+        background-size: 205px 235px;
+    }
+}
+
+.icon.location {
+    background-position: -156px -47px;
+    width: 16px;
+    height: 16px
+}
+
+.icon.money {
+    background-position: -156px -111px;
+    width: 16px;
+    height: 16px
+}
+
+.icon.check {
+    background-position: -76px -182px;
+    width: 16px;
+    height: 16px
+}
+
+.icon.play-gray {
+    background-position: -85px -147px;
+    width: 16px;
+    height: 16px
+}
+
+.icon.clock {
+    background-position: -135px -76px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-date{
+    background-image: url("images/icon-date.png");
+	background-repeat: no-repeat;
+    display: inline-block;
+	width: 16px;
+    height: 16px
+}

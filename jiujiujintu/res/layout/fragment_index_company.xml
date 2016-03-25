@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        style="@style/index_title_text"
+        android:padding="5dip"
+        android:text="@string/company_name" />
+
+    <LinearLayout
+        style="@style/index_company_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_tel" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_tel_content"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/index_company_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_opentime" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_opentime_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/index_company_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_address" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:text="@string/mainpage_address_content"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        style="@style/main_line"
+        android:layout_margin="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/cycle_bg"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/sunshine"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        style="@style/index_company_line"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/index_sunshine1" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:layout_weight="1"
+            android:text="@string/selfhelp_travel" />
+
+        <View
+            style="@style/main_line_vertical"
+            android:layout_weight="0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/index_sunshine2" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:layout_weight="1"
+            android:text="@string/sunshine_price" />
+
+        <View
+            style="@style/main_line_vertical"
+            android:layout_weight="0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/index_sunshine3" />
+
+        <TextView
+            style="@style/index_topbar_icon_text"
+            android:layout_weight="1"
+            android:text="@string/sunshine_service" />
+    </LinearLayout>
+
+</LinearLayout>

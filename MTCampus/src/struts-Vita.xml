@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts-vita" extends="struts-default,struts2">
+		<action name="vit_*" class="vitAction" method="{1}">
+			<result name="getAllvit" type="">vita/show.jsp</result>
+			<result name="update" >vita/update.jsp</result>
+			<result name="updatenew" >vita/update.jsp</result>
+			<result name="addVita" >vita/add.jsp</result>
+			<result name="deletenew" >vita/show.jsp</result>
+			<result name="deleteVita" >vita/show.jsp</result>
+			<result name="addnow" >../index.jsp</result>
+		</action>
+	</package>
+</struts>    

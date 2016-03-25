@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.jiujiu.jintu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/main_index_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            style="@style/index_title_text"
+            android:text="@string/manager_recommend" />
+    </LinearLayout>
+
+    <com.jiujiu.jintu.widget.ScrollListView
+        android:id="@+id/index_recommend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"
+        android:dividerHeight="1px" 
+        >
+    </com.jiujiu.jintu.widget.ScrollListView>
+
+</LinearLayout>

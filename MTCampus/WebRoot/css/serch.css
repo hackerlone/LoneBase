@@ -1,0 +1,64 @@
+.bline_search {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c3c3c3;
+	padding-bottom: 4px;
+	whidth:300px;
+	margin-bottom: 5px;
+	font: "ËÎÌו";
+	font-size: 12px;
+	float:left;
+}
+
+.refineNavOn,.refineNavOff {
+	font-weight: bold;
+	color: #ff7300;
+	cursor: pointer;
+	height: 15px;
+	padding-left: 16px;
+}
+
+.refineNavOn {
+	background: url(../images/arrowblack.gif)
+		no-repeat left center;
+}
+
+.refineNavOff {
+	background: url(../images/arrowgray.gif)
+		no-repeat left 3px;
+}
+
+.refineMenu {
+	height:auto;
+	margin-left: 30px;
+}
+
+.refineMenu ul{
+	margin-left: -20px;
+}
+.refineMenu ul li{
+	list-style-type:none;
+	height: 20px;
+}
+.refineMenu ul li a {
+	
+	display: block;
+	height: 19px;
+	width: 120px;
+	border: 1px solid #ffffff;
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #8b8b8b;
+	background: url(../images/arrowgray.gif)
+		no-repeat 3px center;
+}
+
+
+.refineMenu ul li a:hover {
+	border: 1px solid #cccccc;
+	background-color: #f3f3f3;
+	background-image:
+		url(../images/arrowred.gif);
+	color: #ff7300;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="PmSystem">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="D:/Users/Administrator/AppData/MyEclipse Professional 2014"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="Persisted container [melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER for project [PmSystem]].libraryclasspath"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebRoot/WEB-INF/lib/jsf-api.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/jsf-impl.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/jstl-1.2.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/sqljdbc.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/sqljdbc4.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JavaEE 5.0 Generic Library.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640/data/libraryset/EE_5/javaee.jar"/>
+    </path>
+    <path id="Hibernate 3.3.2 Libraries.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/bytecode/cglib/cglib-2.2.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/bytecode/javassist/javassist-3.9.0.GA.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/hibernate3.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/required/commons-collections-3.1.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/required/jta-1.1.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/required/log4j-1.2.14.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/required/slf4j-api-1.5.8.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.3/lib/core/required/slf4j-log4j12-1.5.8.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.2/lib/core/antlr-2.7.6.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.2/lib/core/ehcache-1.2.3.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/101/1/.cp/myeclipse-data/3.1/lib/core/dom4j-1.6.1.jar"/>
+    </path>
+    <path id="JSTL 1.2 Library.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640/data/libraryset/JSTL1.2/lib/jstl-1.2.jar"/>
+    </path>
+    <path id="MyEclipse Tomcat v7.0 Runtime Libraries.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/annotations-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/catalina-ant.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/catalina-ha.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/catalina-tribes.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/catalina.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/ecj-3.7.2.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/el-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/jasper-el.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/jasper.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/jsp-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/servlet-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-coyote.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-dbcp.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-jdbc.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.genuitec.eclipse.easie.tomcat7.myeclipse_11.5.0.me201310302042/tomcat/lib/tomcat-util.jar"/>
+    </path>
+    <path id="PmSystem.classpath">
+        <pathelement location="WebRoot/WEB-INF/classes"/>
+        <path refid="Persisted container [melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER for project [PmSystem]].libraryclasspath"/>
+        <pathelement location="WebRoot/WEB-INF/lib/sqljdbc.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/sqljdbc4.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/jstl-1.2.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/jsf-impl.jar"/>
+        <pathelement location="WebRoot/WEB-INF/lib/jsf-api.jar"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JavaEE 5.0 Generic Library.libraryclasspath"/>
+        <path refid="Hibernate 3.3.2 Libraries.libraryclasspath"/>
+        <path refid="JSTL 1.2 Library.libraryclasspath"/>
+        <path refid="MyEclipse Tomcat v7.0 Runtime Libraries.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="WebRoot/WEB-INF/classes"/>
+        <copy includeemptydirs="false" todir="WebRoot/WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="WebRoot/WEB-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="WebRoot/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="PmSystem.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

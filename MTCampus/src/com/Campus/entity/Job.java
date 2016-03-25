@@ -1,0 +1,145 @@
+package com.Campus.entity;
+
+import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Job entity. @author MyEclipse Persistence Tools
+ */
+
+public class Job implements java.io.Serializable {
+
+	// Fields
+
+	private Integer ZId;
+	private Enterprise enterprise;
+	private String ZName;
+	private Timestamp ZDate;
+	private String ZArea;
+	private String ZRenshu;
+	private String ZZhineng;
+	private String ZMiaoshu;
+	private String ZXinzi;
+	private String ZXl;
+	private Set jzs = new HashSet(0);
+	// Constructors
+
+	/** default constructor */
+	public Job() {
+	}
+
+	/** minimal constructor */
+	public Job(Integer ZId, Timestamp ZDate) {
+		this.ZId = ZId;
+		this.ZDate = ZDate;
+	}
+
+	/** full constructor */
+	public Job(Integer ZId, Enterprise enterprise, String ZName,
+			Timestamp ZDate, String ZArea, String ZRenshu, String ZZhineng,
+			String ZMiaoshu, String ZXinzi, String ZXl, Set jzs) {
+		this.ZId = ZId;
+		this.enterprise = enterprise;
+		this.ZName = ZName;
+		this.ZDate = ZDate;
+		this.ZArea = ZArea;
+		this.ZRenshu = ZRenshu;
+		this.ZZhineng = ZZhineng;
+		this.ZMiaoshu = ZMiaoshu;
+		this.ZXinzi = ZXinzi;
+		this.ZXl = ZXl;
+		this.jzs = jzs;
+	}
+
+	// Property accessors
+
+	public Integer getZId() {
+		return this.ZId;
+	}
+
+	public void setZId(Integer ZId) {
+		this.ZId = ZId;
+	}
+
+	public Enterprise getEnterprise() {
+		return this.enterprise;
+	}
+
+	public void setEnterprise(Enterprise enterprise) {
+		this.enterprise = enterprise;
+	}
+
+	public String getZName() {
+		return this.ZName;
+	}
+
+	public void setZName(String ZName) {
+		this.ZName = ZName;
+	}
+
+	public Timestamp getZDate() {
+		return this.ZDate;
+	}
+
+	public void setZDate(Timestamp ZDate) {
+		this.ZDate = ZDate;
+	}
+
+	public String getZArea() {
+		return this.ZArea;
+	}
+
+	public void setZArea(String ZArea) {
+		this.ZArea = ZArea;
+	}
+
+	public String getZRenshu() {
+		return this.ZRenshu;
+	}
+
+	public void setZRenshu(String ZRenshu) {
+		this.ZRenshu = ZRenshu;
+	}
+
+	public String getZZhineng() {
+		return this.ZZhineng;
+	}
+
+	public void setZZhineng(String ZZhineng) {
+		this.ZZhineng = ZZhineng;
+	}
+
+	public String getZMiaoshu() {
+		return this.ZMiaoshu;
+	}
+
+	public void setZMiaoshu(String ZMiaoshu) {
+		this.ZMiaoshu = ZMiaoshu;
+	}
+
+	public String getZXinzi() {
+		return this.ZXinzi;
+	}
+
+	public void setZXinzi(String ZXinzi) {
+		this.ZXinzi = ZXinzi;
+	}
+
+	public String getZXl() {
+		return this.ZXl;
+	}
+
+	public void setZXl(String ZXl) {
+		this.ZXl = ZXl;
+	}
+
+	public Set getJzs() {
+		return this.jzs;
+	}
+
+	public void setJzs(Set jzs) {
+		this.jzs = jzs;
+	}
+
+}

@@ -1,0 +1,13 @@
+.top {
+	margin-left: 0px;
+	background-color: #999999;
+	vertical-align: middle;
+}
+.top img {
+	float: left;
+	text-align: left;
+	margin-left: 0px;
+}
+.topwz {
+	float: right;
+}

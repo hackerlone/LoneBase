@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:src="@drawable/green_arrow_left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/qa_more" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_detail"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_id"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 封面 -->
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:background="@drawable/maintop"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tourismdetail_top_type"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:drawableLeft="@drawable/icon_circle_group"
+                    android:text="@string/group_travel" />
+
+                <TextView
+                    style="@style/tourismdetail_top_type"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_circle_setoff_city"
+                    android:text="@string/home_page_yes_set_out" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/remining_count"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/satisfaction_title_2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/satisfaction_percent"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 标题 -->
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title"
+                    android:layout_marginBottom="10dip"
+                    android:text="&lt;若尔盖大草原-九曲花湖3日游>赠双晚会，全程自愿消费" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_product_promotional_price"
+                        android:textColor="@color/red_fd7d73"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan"
+                        android:textColor="@color/red_fd7d73"
+                        android:textSize="18dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:text="@string/beyond_yuan_back"
+                        android:textColor="@color/red_fd7d73"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan" />
+                </LinearLayout>
+
+                <View style="@style/main_line_below" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_reduction_preferential"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="早预订有优惠-7天" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <!-- 点评 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_product_evaluate"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="@string/evaluate_count_new" />
+
+                <View style="@style/main_line_below" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/tip_people"
+                    android:drawablePadding="5dip"
+                    android:text="89378297" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <!-- 查看和选择团期 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_date2"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="@string/group_term_title" />
+
+                <View style="@style/main_line_below" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+            <!-- 行程介绍 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_product_route"
+                    android:text="@string/route_introduce" />
+
+                <View style="@style/main_line_below" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/find_city_down" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <!-- 产品特色 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_product_feature2"
+                    android:text="@string/product_feature" />
+
+                <View style="@style/main_line_below" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/find_city_down" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <!-- 费用与预订须知 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/filter_price"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="@string/fee_and_book_title" />
+            </LinearLayout>
+
+            <!-- 费用与预订须知 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_faq2"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="@string/q_and_a_online" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+
+            <!-- 费用与预订须知 -->
+
+            <View style="@style/main_line" />
+
+            <LinearLayout
+                style="@style/tourismdetail_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tourismdetail_title_icon"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:drawableLeft="@drawable/icon_travel_note"
+                    android:drawableRight="@drawable/arrow_right_dark_gray"
+                    android:text="@string/travel_note" />
+            </LinearLayout>
+
+            <View style="@style/main_line_below" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

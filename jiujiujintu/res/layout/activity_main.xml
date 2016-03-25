@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.jiujiu.jintu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.jiujiu.jintu.widget.CustomViewPager
+        android:id="@+id/mainviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/white"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <com.jiujiu.jintu.widget.MaskImage
+            android:id="@+id/mainbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclcikMainrBar"
+            maskimage:image="@drawable/mainbarbackground_green"
+            maskimage:mask="@drawable/mainbar1" >
+        </com.jiujiu.jintu.widget.MaskImage>
+
+        <com.jiujiu.jintu.widget.MaskImage
+            android:id="@+id/mainbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclcikMainrBar"
+            maskimage:image="@drawable/mainbarbackground_norlmal"
+            maskimage:mask="@drawable/mainbar2" >
+        </com.jiujiu.jintu.widget.MaskImage>
+
+        <com.jiujiu.jintu.widget.MaskImage
+            android:id="@+id/mainbar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclcikMainrBar"
+            maskimage:image="@drawable/mainbarbackground_norlmal"
+            maskimage:mask="@drawable/mainbar3" >
+        </com.jiujiu.jintu.widget.MaskImage>
+
+        <com.jiujiu.jintu.widget.MaskImage
+            android:id="@+id/mainbar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclcikMainrBar"
+            maskimage:image="@drawable/mainbarbackground_norlmal"
+            maskimage:mask="@drawable/mainbar4" >
+        </com.jiujiu.jintu.widget.MaskImage>
+
+        <com.jiujiu.jintu.widget.MaskImage
+            android:id="@+id/mainbar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclcikMainrBar"
+            maskimage:image="@drawable/mainbarbackground_norlmal"
+            maskimage:mask="@drawable/mainbar5"
+            >
+        </com.jiujiu.jintu.widget.MaskImage>
+    </LinearLayout>
+
+</LinearLayout>

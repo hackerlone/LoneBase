@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title and other stuffs -->
+  <title>小区物业管理登录页面</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="">
+  <!-- Stylesheets -->
+  <link href="style/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/font-awesome.css">
+  <link href="style/style.css" rel="stylesheet">
+  <link href="style/bootstrap-responsive.css" rel="stylesheet">
+ 
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+  
+  <script type="text/javascript"
+   src="js/jquery-1.4.2.min.js"></script>
+   <script type="text/javascript">
+   	$(document).ready(function(){
+      $("#loginbtn").click(function(){
+	  	 $("#namemsg").text("");
+		 $("#pwdmsg").text("");
+        var name = $("#name").val();
+		var pwd = $("#pwd").val();
+		var other = $("#other").val();
+		 //AJAX方式提交
+		 if(other=="1"){
+		 $.ajax(
+		 {//1.测试服务端，浏览器输入相应地址传递参数
+		  //2.jquery事件是否响应
+		  //3.测试jquer能获得服务器的返回
+		 	type:'post',//提交方式
+			url:'UserS',//提交目标地址
+			dataType:'text',
+			data:'name='+name+"&pwd="+pwd+"&option=login",//提交参数
+			success:function(data){
+				//alert(data);测试3
+				if(data==-1){
+			       $("#namemsg").text("管理员不存在").css("color","red");		
+				}else if(data==-2){
+				   $("#pwdmsg").text("密码错误").css("color","red");	
+				}else{
+					window.location.href="UserS?option=saveUser";
+				}
+			}//当服务器成功返回时调用的函数，回调函数
+			}
+		 );
+		 }else if(other=="2"){
+			 $.ajax(
+					 {//1.测试服务端，浏览器输入相应地址传递参数
+					  //2.jquery事件是否响应
+					  //3.测试jquer能获得服务器的返回
+					 	type:'post',//提交方式
+						url:'WgloginS',//提交目标地址
+						dataType:'text',
+						data:'name='+name+"&pwd="+pwd+"&option=login",//提交参数
+						success:function(data){
+							//alert(data);测试3
+							if(data==-1){
+						       $("#namemsg").text("用户名不存在").css("color","red");		
+							}else if(data==-2){
+							   $("#pwdmsg").text("密码错误").css("color","red");	
+							}else{
+								window.location.href="WgloginS?option=saveUser";
+							}
+						}//当服务器成功返回时调用的函数，回调函数
+						}
+					 );
+		 }else if(other=="3"){
+			 $.ajax(
+					 {//1.测试服务端，浏览器输入相应地址传递参数
+					  //2.jquery事件是否响应
+					  //3.测试jquer能获得服务器的返回
+					 	type:'post',//提交方式
+						url:'YzloginS',//提交目标地址
+						dataType:'text',
+						data:'name='+name+"&pwd="+pwd+"&option=login",//提交参数
+						success:function(data){
+							//alert(data);测试3
+							if(data==-1){
+						       $("#namemsg").text("业主姓名不存在").css("color","red");		
+							}else if(data==-2){
+							   $("#pwdmsg").text("密码错误").css("color","red");	
+							}else{
+								window.location.href="YzloginS?option=saveUser";
+							}
+						}//当服务器成功返回时调用的函数，回调函数
+						}
+					 );
+		 }
+	  });
+	});
+	
+   </script>
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+</head>
+
+<body>
+
+<!-- Form area -->
+<div class="admin-form">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Widget starts -->
+            <div class="widget worange">
+              <!-- Widget head -->
+              <div class="widget-head">
+                <i class="icon-lock"></i> 登录 
+              </div>
+
+              <div class="widget-content">
+                <div class="padd">
+                  <!-- Login form -->
+                  <form class="form-horizontal" action="#" method="post" >
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="control-label col-lg-3" for="inputEmail">用户名</label>
+                      <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="username" name="name" id="name">
+                     	<div id="namemsg"></div>
+                      </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group">
+                      <label class="control-label col-lg-3" for="inputPassword">密码</label>
+                      <div class="col-lg-9">
+                        <input type="password" class="form-control" placeholder="password" name="pwd" id="pwd">       
+                      <div id="pwdmsg"></div>
+                      </div>
+                      
+                    </div>
+                    <!-- Remember me checkbox and sign in button -->
+                    <div class="form-group">
+					<div class="col-lg-9 col-lg-offset-3">
+                      
+					</div>
+					</div>
+                        <div class="col-lg-9 col-lg-offset-2">
+                          <select class="btn btn-default" name="other" id="other">
+                 	<option value="3">业主登录</option>
+                 	<option value="2">工作人员登录</option>
+                 	<option value="1">管理员登录</option>
+                 </select>
+							<button type="button" class="btn btn-danger" id="loginbtn">登录</button>
+							<button type="reset" class="btn btn-default">取消</button>
+						</div>
+                    <br />
+                  </form>
+				  
+				</div>
+                </div>
+              
+                <div class="widget-foot">
+                  Not Registred? <a href="#">Register here</a>
+                </div>
+            </div>  
+      </div>
+    </div>
+  </div> 
+</div>
+	
+		
+
+<!-- JS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

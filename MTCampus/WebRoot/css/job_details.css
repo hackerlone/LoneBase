@@ -1,0 +1,426 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.jb_det_left{
+    width: 704px;
+    background: #fff;
+    overflow: hidden;
+    height: auto;
+    float: left;
+}
+.jb_det_left_top{
+    height: 72px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px 0 30px;
+    position: relative;
+
+
+}
+.sj_ico{
+  width: 20px;height:20px;
+  display: inline-block;
+  position: absolute;top:25px;
+  background-size: cover;
+  cursor: pointer;
+}
+.sc{
+  right:50px;
+  background-image: url('/static/img/shoucang.png');
+}
+.sc_confirm{
+  background-image: url(/static/img/shouchang_huang.png);
+}
+.jb{
+  right:20px;
+  background-image: url('/static/img/jubao.png');
+}
+.com_res,.com_res_url{
+    cursor: pointer;
+}
+.job_name{
+    color: #02a0e9;
+    font-size: 24px;
+    line-height: 72px;
+    width: 380px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.update_time{
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+    top: 26px;
+    right: 90px;
+}
+.jb_det_left_mid{
+
+    width: 664px;
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    position: relative;
+}
+.jb_det_left_mid span{
+
+    margin-left:10px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 0 0 22px;
+
+}
+
+.jb_det_left_mid .daymoney{
+    width: 16px;
+    margin-left: 7px;
+
+    background: url(/static/img/xiangqing.png) no-repeat;
+    background-position: 0 0;
+
+
+}
+
+.overdue{
+    position: absolute;
+    width:200px;
+    top:100px;
+    right:50%;
+}
+
+
+.city{
+    display: inline-block;
+    max-width: 160px;
+    overflow:hidden;
+    vertical-align: top;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    background: url(/static/img/xiangqing.png) no-repeat;
+    background-position: 0 -21px;
+}
+.education{
+    width: 16px;
+
+    background: url(/static/img/xiangqing.png) no-repeat;
+    background-position: 0 -42px;
+
+
+}
+.days{
+    width: 16px;
+
+    background: url(/static/img/xiangqing.png) no-repeat;
+    background-position: 0 -63px;
+
+
+}
+.month{
+    width: 16px;
+
+    background: url(/static/img/xiangqing.png) no-repeat;
+    background-position: 0 -84px;
+
+
+}
+
+.jb_det_left_mid p .youhuo{
+
+    font-size: 16px;
+    color: #333;
+    padding: 0 0 0 0;
+}
+.jb_det_left_mid p{
+
+    color: #555;
+    margin:40px 0 0 0;
+}
+
+.jb_description{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+}
+.dec_content{
+    font-size: 14px;
+    color: #555;
+    display: block;
+
+    margin: 30px 40px 0 30px;
+
+}
+.closing_date{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+}
+.date{
+    font-size: 14px;
+    color: #555;
+    margin: 30px 0 0 30px;
+}
+.jb_det_left_bottom{
+    width: 704px;
+    height: 96px;
+    background: #fff;
+    margin: 30px 0;
+    padding: 30px auto;
+    border-top: 1px solid #ddd;
+}
+.jb_det_left_bottom a{
+    display: block;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background:#02a0e9;
+    margin:30px auto;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.5s;
+
+}
+.jb_det_left_bottom a:hover{
+    background:#0485b2;
+}
+.jb_det_right{
+    width: 260px;
+    float: left;
+    margin-left: 20px;
+
+}
+.jb_det_right_top{
+    background: #fff;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.jb_det_right_top img{
+    display: block;
+    margin: 30px auto 15px;
+    border:1px solid #eee;
+}
+.jb_det_right_top p a{
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+.jb_det_right_top img.people{
+    width: 14px;
+    height: 14px;
+    border: none;
+    display: inline;
+    margin: 0 4px 0 0;
+
+}
+.jb_det_right_top img.pin{
+    width: 14px;
+    height: 14px;
+    border: none;
+    display: inline;
+    margin: 0 4px 0 0;
+}
+.jb_det_right_top img.website{
+    width: 14px;
+    height: 14px;
+    border: none;
+    display: inline;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+}
+
+
+.jb_det_right_top p .web_href{
+    width: 160px;
+    font-size: 14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.jb_det_right_top p .web_href:hover{
+    color: #0485b2;
+
+}
+.infor{
+    width: 220px;
+    border-top: 1px solid #ddd;
+    margin: 20px auto;
+}
+.jb_det_right_top p{
+    font-size: 14px;
+    color: #333;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.jb_det_right_mid{
+    height: 28px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 15px;
+    padding: 16px 0 16px 18px;
+}
+.third_party{
+    height: 30px;
+    margin: 0 auto;
+}
+
+.weibo{
+    float: left;
+    width: 29px;
+    height: 30px;
+    margin-left: 22px;
+    background: url(/static/img/disanfang.png) no-repeat;
+    background-position: 0 0;
+}
+.qq{
+    float: left;
+    width: 29px;
+    height: 30px;
+    margin-left: 18px;
+    background: url(/static/img/disanfang.png) no-repeat;
+    background-position: -30px 0;
+}
+.weixin{
+    float: left;
+    width: 29px;
+    height: 30px;
+    margin-left: 18px;
+    background: url(/static/img/disanfang.png) no-repeat;
+    background-position: -60px 0;
+}
+.q_zone{
+    float: left;
+    width: 29px;
+    height: 30px;
+    margin-left: 18px;
+    background: url(/static/img/disanfang.png) no-repeat;
+    background-position: -90px 0;
+}
+.douban{
+    float: left;
+    width: 29px;
+    height: 30px;
+    margin-left: 18px;
+    background: url(/static/img/disanfang.png) no-repeat;
+    background-position: -120px 0;
+}
+.jb_det_right_bottom{
+    overflow: hidden;
+    background: #fff;
+    margin-top: 15px;
+}
+.jb_det_right_bottom p{
+    display: block;
+    margin: 15px auto 20px;
+
+    width: 220px;
+
+
+}
+.jb_det_right_bottom img.gps{
+    width: 14px;
+    height: 14px;
+    border: none;
+    display: inline;
+    margin: 0 4px 0 0;
+
+}
+
+#mapBox{
+    width: 220px;
+    height: 176px;
+    background: #19aa8d;
+    margin: 15px auto 20px;
+}
+
+
+.textview{
+    width:400px;
+    margin: 50px auto;
+}
+
+.jb-box{
+    width: 500px;
+    height: 360px;
+    background: #fff;
+    position: relative;
+    display: none;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.jb_close{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    -webkit-transform: scale(1.2, 1);
+    -moz-transform: scale(1.2, 1);
+    -ms-transform: scale(1.2, 1);
+    -o-transform: scale(1.2, 1);
+    transform: scale(1.2, 1);
+}
+.jb_title{
+    background: #02a0e9;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+.inf{
+  width: 400px;
+  margin: 20px auto 0;
+}
+.inf_msg{
+  width: 380px;
+  height: 160px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border-radius: 6px;
+  margin: 10px 0 0 0;
+  border: 1px solid #ddd;
+}
+.inf_msg:focus{
+ border: 1px solid #02a0e9;
+}
+.inf_pre{
+  outline: none;
+  cursor: pointer;
+    font-size: 16px;
+  padding: 10px 25px;
+  background: #02a0e9;
+  color: #fff;
+  border: none;
+  float: right;
+  border-radius: 6px;
+  margin: 20px 0 0 0;
+}
+.load_res_de{
+    width: 500px;
+}
+
+.jb_det_left_bottom .delievered_btn{
+    cursor: pointer;
+    background: #ddd;
+}
+.jb_det_left_bottom .delievered_btn:hover{
+    background: #ddd;
+}

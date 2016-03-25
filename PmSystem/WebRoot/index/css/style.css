@@ -1,0 +1,11 @@
+﻿.vp,.vip,.vip1,.vip2,.vip3,.vip4,.vip5,.vip6,.vip7{background: url(images/vip.png) no-repeat;display: inline-block;overflow: hidden;border: none;}
+.sb{backgroun:url(images/vip.png) no-repeat;width 16px;height:16px;}
+.vp{background-position:-495px -3px;width: 20px;height: 16px;margin-bottom: -7px;margin-left:2px}
+.vip{background-position:-515px -2px;width: 15px;height: 16px;margin-bottom: -3px;}
+.vip1{background-position:-1px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip2{background-position:-63px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip3{background-position:-144px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip4{background-position:-227px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip5{background-position:-331px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip6{background-position:-441px -2px;width: 45px;height: 16px;margin-bottom: -3px;}
+.vip7{background-position:-611px -2px;width: 45px;height: 16px;margin-bottom: -3px;}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YzS</servlet-name>
+    <servlet-class>gxa.servlet.YzS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WgxxS</servlet-name>
+    <servlet-class>gxa.servlet.WgxxS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WysfS</servlet-name>
+    <servlet-class>gxa.servlet.WysfS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GzryS</servlet-name>
+    <servlet-class>gxa.servlet.GzryS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TsS</servlet-name>
+    <servlet-class>gxa.servlet.TsS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ZyS</servlet-name>
+    <servlet-class>gxa.servlet.ZyS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserS</servlet-name>
+    <servlet-class>gxa.servlet.UserS</servlet-class>
+  </servlet>
+<!-- 上传 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileUpS</servlet-name>
+    <servlet-class>gxa.servlet.FileUpS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WgloginS</servlet-name>
+    <servlet-class>gxa.servlet.WgloginS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChartS</servlet-name>
+    <servlet-class>gxa.servlet.ChartS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YzloginS</servlet-name>
+    <servlet-class>gxa.servlet.YzloginS</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>YzS</servlet-name>
+    <url-pattern>/YzS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WgxxS</servlet-name>
+    <url-pattern>/WgxxS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WysfS</servlet-name>
+    <url-pattern>/WysfS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GzryS</servlet-name>
+    <url-pattern>/GzryS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TsS</servlet-name>
+    <url-pattern>/TsS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZyS</servlet-name>
+    <url-pattern>/ZyS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserS</servlet-name>
+    <url-pattern>/UserS</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileUpS</servlet-name>
+    <url-pattern>/FileUpS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WgloginS</servlet-name>
+    <url-pattern>/WgloginS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChartS</servlet-name>
+    <url-pattern>/ChartS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YzloginS</servlet-name>
+    <url-pattern>/YzloginS</url-pattern>
+  </servlet-mapping>
+
+  <!-- 用于验证登录信息 -->
+  <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>loginfilter</filter-name>
+    <filter-class>filter.loginFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>loginfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+    <!-- end -->
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

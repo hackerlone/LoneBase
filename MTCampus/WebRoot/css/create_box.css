@@ -1,0 +1,180 @@
+.popup{
+  width:600px;
+  margin:0;
+  padding:0;
+  background-color: #FFF;
+  position: relative;
+  display: none;
+}
+
+.popup_head{
+  background-color: #00A9E0;
+  height: 50px;
+  width:580px;
+  font-size:18px;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.popup_main{
+  width:500px;
+  padding: 10px 50px;
+}
+
+.to{
+  font-size: 18px;
+  color:#666;
+  width:470px;
+  margin: 20px auto 10px auto;
+}
+.tips{
+  font-size: 14px;
+}
+
+
+.noticeinterviewTable{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.noticeinterviewTable tr{
+  height:52px;
+}
+.noticeinterviewTable label{
+  color:red;
+}
+.noticeinterviewTable td{
+  text-align: right;
+  padding: 0 10px;
+  font-size: 16px;
+  margin: 0;
+}
+.noticeinterviewTable td input{
+  width:350px;
+  height:35px;
+  font-size: 16px;
+  margin: 0;
+  padding:0 10px;
+}
+.noticeinterviewTable td textarea{
+  border: 1px solid #ddd;
+  width:350px;
+  height:80px;
+  font-size: 16px;
+  padding:10px;
+}
+.borderbox{
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.popup_btn{
+  width:90px;
+  height:40px;
+  border-radius: 6px;
+  background-color: #70ccec;
+  margin: 10px 10px 10px 20px;
+  float: right;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.popup_btn:hover{
+  background-color: #03A4D8;
+}
+
+.popup_close{
+  font-size: 40px;
+  position: absolute;
+  top:12px;
+  right:10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*寮圭獥 瀛︾敓鍙嶉*/
+.popup .f14{
+  font-size: 14px;
+}
+.popup .f16{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.popup .colorfont{
+  color: #17c1f7;
+}
+.talk_close{
+  font-size: 30px;
+  position: absolute;
+  top:12px;
+  right:10px;
+  color: #000;
+  cursor: pointer;
+}
+.talk_top{
+  width:560px;
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #BBBBBB;
+}
+.sfont{
+  width: 460px;
+  line-height: 50px;
+  font-size: 16px;
+  float: left;
+}
+.mfont{
+  float: left;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.talk_content{
+  width:100%;
+  height: 280px;
+  overflow-y:auto;
+  border-bottom: 1px solid #BBBBBB;
+}
+.talk_content .time{
+  padding-top: 10px;
+  color: #999;
+  text-align: center;
+}
+.talk_content .air{
+  width:510px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 6px;
+  background: #ECEDF0;
+}
+.talk_content .talk{
+  width: 540px;
+  margin: 20px auto;
+}
+
+.talk_content .talk .who{
+  color:#999;
+}
+.talk_content .talk .say{
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color:#ECEDF0;
+}
+.talk_foot{
+  padding:0 20px;
+  height:80px;
+}
+.write_box{
+  width: 510px;
+  height: 60px;
+  border: 0;
+  border-radius: 6px;
+  padding: 15px;
+  display: block;
+  margin: 10px auto;
+  background: #ECEDF0;
+  outline: none;
+  resize: none;
+}

@@ -1,0 +1,21 @@
+package com.Campus.dao;
+
+import java.util.Iterator;
+import java.util.List;
+
+import com.Campus.entity.Job;
+import com.Campus.entity.Job;
+import com.Campus.entity.Student;
+import com.Campus.entity.Vita;
+
+public interface JobDaoI extends BaseDaoI{
+	public List<Job> getAllJob() throws Exception;
+	public Job getJobById(int id) throws Exception;
+	public void update(Job job) throws Exception;
+	public List getJobMaxId() throws Exception;
+	public void addJob(Job jobs)throws Exception;
+	public Job deleteJob(int id) throws Exception;
+	public void delete(Job job) throws Exception;
+	public Iterator selcJob(String hql) throws Exception;
+	public Iterator selcJname(String hql1) throws Exception;
+}
