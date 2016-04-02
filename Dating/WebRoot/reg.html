@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>帐号注册</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../Css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="../Css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="../Css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="../Js/jquery.sorted.js"></script>
+<script type="text/javascript" src="../Js/bootstrap.js"></script>
+<script type="text/javascript" src="../Js/ckform.js"></script>
+<script type="text/javascript" src="../Js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript"
+	src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+	
+</script>
+
+<style type="text/css">
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-signin .form-signin-heading,.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="text"],.form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<form class="form-signin" method="post" action="LoginServlet?option=save">
+			<h2 class="form-signin-heading">帐号注册</h2>
+			
+			帐&nbsp;&nbsp;&nbsp;&nbsp;号：<input type="text" name="name"
+				class="input-block-level" placeholder="用户名" id="username"><br />
+			邮&nbsp;&nbsp;&nbsp;&nbsp;箱：<input type="text" name="email"
+				class="input-block-level" placeholder="邮箱" id="email"><br />
+			年&nbsp;&nbsp;&nbsp;&nbsp;龄：<input type="text" name="age"
+				class="input-block-level Wdate" placeholder="年龄"
+				onClick="WdatePicker()" readonly /><br />
+			性&nbsp;&nbsp;&nbsp;&nbsp;别:<input type="radio" value="1" name="sex" checked="checked"/>男
+			<input type="radio" value="2" name="sex" />女<br />
+			密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd"
+				class="input-block-level" placeholder="密码"><br />
+			 确认密码：<input
+				type="password" name="unpassword" class="input-block-level"
+				placeholder="确认密码"><br />
+			 电&nbsp;&nbsp;&nbsp;&nbsp;话：<input
+				type="text" name="phone" class="input-block-level" placeholder="18380331820"><br />
+			地&nbsp;&nbsp;&nbsp;&nbsp;区：<input type="text" name="area"
+				class="input-block-level" placeholder="四川成都"><br />
+			个&nbsp;&nbsp;&nbsp;&nbsp;签：<input type="text" name="qianming"
+				class="input-block-level" placeholder="个性签名"><br />
+			<p>
+				<button class="btn btn-large btn-primary" type="submit">注册</button>
+				<button class="btn btn-large btn-primary" type="reset">重填</button>
+			</p>
+		</form>
+
+	</div>
+</body>
+</html>

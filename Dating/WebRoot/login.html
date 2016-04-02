@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户登录</title>
+	<meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../Js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.js"></script>
+    <script type="text/javascript" src="../Js/ckform.js"></script>
+    <script type="text/javascript" src="../Js/common.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+    		$("#loginbtn").click(function (){
+    			var username = $("#username").val();
+    			var password = $("#password").val();
+    			$.ajax({
+					url : 'LoginServlet?option=login',
+					type : 'post',
+					data : {"username" : username,"password" : password},
+					dataType:'text',
+					success : function(data) {
+						if(data=="1"){
+							window.location.href="sys/main.jsp";
+						}else{
+							$("#msg").text("用户名或密码错误");
+						}
+					}
+
+    		});
+    		});
+    	});
+    </script>
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .form-signin {
+            max-width: 300px;
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+        }
+
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .form-signin input[type="text"],
+        .form-signin input[type="password"] {
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+	.msg{
+		 font-size: 16px;
+		 color: red;
+	}
+    </style>  
+</head>
+<body>
+<div class="container">
+
+    <form class="form-signin" method="post" action="UserServlet?option=login">
+        <h2 class="form-signin-heading">登录系统</h2>
+        
+        账号：<input type="text" name="username" class="input-block-level" placeholder="账号" id="username"><br/>
+        密码：<input type="password" name="password" id="password" class="input-block-level" placeholder="密码">
+<div class="msg" id="msg"></div>
+        <p><button class="btn btn-large btn-primary" id="loginbtn" type="button">登录</button>
+        <a href="reg.html"><button class="btn btn-large btn-primary" type="button">注册</button></a>
+        <a href="LoginServlet?option=loginout"><button class="btn btn-large btn-primary" type="button">注销</button></a>
+        </p>
+    </form>
+
+</div>
+</body>
+</html>
