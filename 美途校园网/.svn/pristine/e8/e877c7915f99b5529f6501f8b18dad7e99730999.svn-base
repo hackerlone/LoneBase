@@ -1,0 +1,21 @@
+package com.Campus.service;
+
+import com.Campus.entity.Job;
+import com.Campus.entity.Job;
+import com.Campus.entity.Student;
+
+import com.Campus.page.PageInfo;
+
+import java.util.List;
+
+public interface JobServiceI {
+	public  List<Job> getAllJob(PageInfo pageInfo)throws Exception;
+	public Job getJobById(int id)throws Exception;
+	 public void update(Job job) throws Exception;
+	 public List getJobMaxId() throws Exception;
+	 public void addJob(Job jobs) throws Exception;
+
+	
+
+	 
+}

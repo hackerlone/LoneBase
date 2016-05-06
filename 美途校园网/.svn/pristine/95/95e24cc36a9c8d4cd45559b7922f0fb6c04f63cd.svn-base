@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts-job" extends="struts-default,struts2">
+		<action name="job_*" class="jobAction" method="{1}">
+			<result name="getAlljob" type="">job/show.jsp</result>
+			<result name="update">job/update.jsp</result>
+			<result name="updatenew">job/update.jsp</result>
+			<result name="addnow">msg.jsp</result>
+			<result name="deletenew" >job/show.jsp</result>
+			<result name="deleteVita" >job/show.jsp</result>
+		</action>
+	</package>
+</struts>    

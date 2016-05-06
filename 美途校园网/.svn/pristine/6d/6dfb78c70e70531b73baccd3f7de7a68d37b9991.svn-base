@@ -1,0 +1,11 @@
+package com.Campus.dao;
+
+import java.util.List;
+
+import com.Campus.entity.Admin;
+
+
+public interface AdminDaoI extends BaseDaoI{
+	public List<Admin> getAllAdmin() throws Exception;
+//	public Student getStudentById(int id) throws Exception;
+}

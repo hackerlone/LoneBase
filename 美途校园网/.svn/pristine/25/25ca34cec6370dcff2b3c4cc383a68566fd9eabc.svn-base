@@ -1,0 +1,111 @@
+var xz="";
+var yx="";
+var gm="";
+var xl="";
+
+$(document).ready(function() {
+	secJob();
+		$("#search1").click(function (){
+			if($("#search1").attr("class").toString()=="refineNavOn"){
+				$("#search1").removeClass("refineNavOn");
+				$("#search1").addClass("refineNavOff");
+				$("#xz").hide();
+			}else if($("#search1").attr("class").toString()=="refineNavOff"){
+				$("#search1").removeClass("refineNavOff");
+				$("#search1").addClass("refineNavOn");
+				$("#xz").show();
+			}
+		});
+		$("#search2").click(function (){
+			if($("#search2").attr("class").toString()=="refineNavOn"){
+				$("#search2").removeClass("refineNavOn");
+				$("#search2").addClass("refineNavOff");
+				$("#yx").hide();
+			}else{
+				$("#search2").removeClass("refineNavOff");
+				$("#search2").addClass("refineNavOn");
+				$("#yx").show()
+			}
+		});
+		$("#search3").click(function (){
+			if($("#search3").attr("class").toString()=="refineNavOn"){
+				$("#search3").removeClass("refineNavOn");
+				$("#search3").addClass("refineNavOff");
+				$("#gm").hide();
+			}else{
+				$("#search3").removeClass("refineNavOff");
+				$("#search3").addClass("refineNavOn");
+				$("#gm").show();
+			}
+		});
+		$("#search4").click(function (){
+			if($("#search4").attr("class").toString()=="refineNavOn"){
+				$("#search4").removeClass("refineNavOn");
+				$("#search4").addClass("refineNavOff");
+				$("#xl").hide();
+			}else{
+				$("#search4").removeClass("refineNavOff");
+				$("#search4").addClass("refineNavOn");
+				$("#xl").show();
+			}
+		});
+		$("#search5").click(function (){
+			if($("#search5").attr("class").toString()=="refineNavOn"){
+				$("#search5").removeClass("refineNavOn");
+				$("#search5").addClass("refineNavOff");
+				$("#rq").hide();
+			}else{
+				$("#search5").removeClass("refineNavOff");
+				$("#search5").addClass("refineNavOn");
+				$("#rq").show()
+			}
+		});
+		
+		
+		$("#xz > ul > li >a").click(function (){
+			$("#secjob > tr").remove();
+			xz = $(this).text().toString();	
+			$("#xz > ul > li >a").css("background","#666");			
+			$(this).css("background","red");
+			
+			secJob();
+		});		
+		$("#yx > ul > li >a").click(function (){
+			$("#secjob > tr").remove();
+			yx = $(this).text().toString();
+			$("#yx > ul > li >a").css("background","#666");	
+			$(this).css("background","red");
+			secJob();
+		});
+		$("#gm > ul > li >a").click(function (){
+			$("#secjob > tr").remove();
+			gm = $(this).text().toString();
+			$("#gm > ul > li >a").css("background","#666");	
+			$(this).css("background","red");
+			secJob();
+		});
+		$("#xl > ul > li >a").click(function (){
+			$("#secjob > tr").remove();
+			xl = $(this).text().toString();
+			$("#xl > ul > li >a").css("background","#666");	
+			$(this).css("background","red");
+			secJob();
+		});
+		
+		function secJob(){
+			
+		$.ajax({
+			url:'utils_selcAllJob',
+			type:'post',
+			data:{"xz":xz,"yx":yx,"gm":gm,"xl":xl},
+			dataType:'json',
+			success: function (data){
+				$(data).each(function(i,obj){
+					$("#secjob").append(
+"<tr>"+"<td>"+obj.id+"</td><td>"+obj.qid+"</td><td>"+obj.name+"</td><td>"+obj.data+"</td><td>"+obj.area+"</td><td>"+obj.renshu+"</td><td>"+obj.zhineng+"</td><td>"+obj.miaoshu+"</td><td>"+obj.xinzi+"</td><td>"+obj.xl+"</td>"+"</tr>");
+				});
+			}});
+		}
+	});
+
+

@@ -1,0 +1,99 @@
+package com.Campus.entity;
+
+import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+
+
+/**
+ * Job entity. @author MyEclipse Persistence Tools
+ */
+
+public class Job  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Integer ZId;
+     private Enterprise enterprise;
+     private String ZName;
+     private Timestamp ZDate;
+     private String ZArea;
+     private String ZRenshu;
+     private String ZZhineng;
+     private String ZMiaoshu;
+     private String ZXinzi;
+	public Job() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Job(Integer zId, Enterprise enterprise, String zName,
+			Timestamp zDate, String zArea, String zRenshu, String zZhineng,
+			String zMiaoshu, String zXinzi) {
+		super();
+		ZId = zId;
+		this.enterprise = enterprise;
+		ZName = zName;
+		ZDate = zDate;
+		ZArea = zArea;
+		ZRenshu = zRenshu;
+		ZZhineng = zZhineng;
+		ZMiaoshu = zMiaoshu;
+		ZXinzi = zXinzi;
+	}
+	public Integer getZId() {
+		return ZId;
+	}
+	public void setZId(Integer zId) {
+		ZId = zId;
+	}
+	public Enterprise getEnterprise() {
+		return enterprise;
+	}
+	public void setEnterprise(Enterprise enterprise) {
+		this.enterprise = enterprise;
+	}
+	public String getZName() {
+		return ZName;
+	}
+	public void setZName(String zName) {
+		ZName = zName;
+	}
+	public Timestamp getZDate() {
+		return ZDate;
+	}
+	public void setZDate(Timestamp zDate) {
+		ZDate = zDate;
+	}
+	public String getZArea() {
+		return ZArea;
+	}
+	public void setZArea(String zArea) {
+		ZArea = zArea;
+	}
+	public String getZRenshu() {
+		return ZRenshu;
+	}
+	public void setZRenshu(String zRenshu) {
+		ZRenshu = zRenshu;
+	}
+	public String getZZhineng() {
+		return ZZhineng;
+	}
+	public void setZZhineng(String zZhineng) {
+		ZZhineng = zZhineng;
+	}
+	public String getZMiaoshu() {
+		return ZMiaoshu;
+	}
+	public void setZMiaoshu(String zMiaoshu) {
+		ZMiaoshu = zMiaoshu;
+	}
+	public String getZXinzi() {
+		return ZXinzi;
+	}
+	public void setZXinzi(String zXinzi) {
+		ZXinzi = zXinzi;
+	}
+	
+}

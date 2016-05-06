@@ -1,0 +1,41 @@
+package com.Campus.service;
+
+import com.Campus.page.PageInfo;
+
+import java.util.List;
+import com.Campus.entity.Student;
+import com.Campus.dao.StudentDaoI;
+import com.Campus.entity.Student;
+
+
+
+public class StudentService implements StudentServiceI {
+	private StudentDaoI studentDaoI;
+
+	public StudentDaoI getStudentDaoI() {
+		return studentDaoI;
+	}
+
+	public void setStudentDaoI(StudentDaoI studentDaoI) {
+		this.studentDaoI = studentDaoI;
+	}
+	
+	
+	public  List<Student> getAllStudent(PageInfo pageInfo)throws Exception{
+		 return studentDaoI.getPage("from Student", pageInfo);
+	 }
+	 public Student getStudentById(int id)throws Exception{
+		  return studentDaoI.getStudentById(id);
+	  }
+	 public void update(Student student) throws Exception{
+			studentDaoI.update(student);
+		}
+	 
+	 public List getStudentMaxId() throws Exception {
+		 return studentDaoI.getStudentMaxId();
+	 }
+
+	 public void addStu(Student student) throws Exception{
+		 studentDaoI.addStu(student);
+	 }
+}

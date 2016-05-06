@@ -1,0 +1,37 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<%@taglib prefix="s" uri="/struts-tags" %>
+<%@taglib prefix="sx" uri="/struts-dojo-tags"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+   <base href="<%=basePath%>">
+    <title>My JSP 'reg.jsp' starting page</title>
+    
+    <link rel="stylesheet" type="text/css"  href="css/reg.css">
+    <sx:head parseContent="true"/>
+ 	<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+    <script type="text/javascript" src="js/ajaxfileupload.js"></script>
+     <script type="text/javascript" src="js/upload.js"></script>
+  </head>
+  <body>
+   <s:form action="job_update">
+    职业编号:<s:property value="job.ZId"/><br/>
+   编号 <s:property value="job.enterprise.QId"/><br/>
+   <s:textfield name="job.ZName" label="职位名称"/>
+         <sx:datetimepicker name="job.ZDate" label="求职时间" 
+       displayFormat="yyyy年MM月dd日"/>
+       
+        <s:textfield name="job.ZArea" label="工作地点"/>
+       <s:textfield name="job.ZRenshu" label="招聘人数"/>
+       <s:textfield name="job.ZZhineng" label="职位要求"/><br />
+         <s:textfield name="job.ZMiaoshu" label="职位描述"/><br />
+         <s:textfield name="job.ZXinzi" label="薪资"/><br />
+   	 <s:hidden id="face" name="job.JFace"></s:hidden>   
+   	<s:submit value="修改"></s:submit>
+   </s:form>
+   </body>
+</html>

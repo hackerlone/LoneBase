@@ -1,0 +1,58 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"
+	contentType="text/html; charset=utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<%@taglib prefix="s" uri="/struts-tags" %>
+<%@taglib prefix="page" uri="/WEB-INF/paging.tld" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+   
+    
+    <title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+  </head>
+  
+  <body>
+   <div>
+   	<table border="1">
+   	  <tr><th>编号</th><th>姓名</th><th>密码</th><th>注册时间</th><th>薪资</th>
+   	  		<th>规模</th><th>地区</th><th>邮编</th><th>邮箱</th><th>电话</th><th>描述</th><th>操作</th></tr>
+   	  	<tbody>
+   	  		<s:iterator value="#request.enterprises" var="qys">
+	   	  		<tr>
+				  	<td><s:property value="#qys.QId" /></td>
+				   <td><s:property value="#qys.QName" /></td>
+				    <td><s:property value="#qys.QPwd"/></td>
+				    <td><s:property value="#qys.QDate"/></td>
+				    <td><s:property value="#qys.QXingzhi"/></td>
+				    <td><s:property value="#qys.QGuimo"/></td>
+				    <td><s:property value="#qys.QArea"/></td>
+				    <td><s:property value="#qys.QYoubian"/></td>
+				    <td><s:property value="#qys.QEmail"/></td>
+				    <td><s:property value="#qys.QPhone"/></td>
+				    <td><s:property value="#qys.QMiaoshu"/></td>
+				    <td><a href="qy_getEnterpriseById.action?enterprise.QId=<s:property value='#qys.QId'/>&option=update" >修改</a>
+				    </td>
+				    <td><a href="qy/add.jsp">添加</a></td>
+			     </tr>
+			</s:iterator>
+	    </tbody>
+    </table>
+			 <page:paging offset="${pageInfo.firstResult}" 
+                  pageSize="${pageInfo.maxResults}" 
+        totalRecords="${pageInfo.itemCount}"
+        href="/MTCampus/qy_getAllEnterprise.action"/>
+   </div>
+   
+  </body>
+</html>

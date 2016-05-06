@@ -1,0 +1,145 @@
+package com.Campus.controller;
+
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+import org.hibernate.Session;
+
+import com.Campus.entity.Student;
+import com.Campus.entity.Vita;
+import com.Campus.page.PageInfo;
+import com.Campus.service.StudentServiceI;
+import com.Campus.utils.MD5Code;
+import com.opensymphony.xwork2.ActionSupport;
+import com.sun.org.apache.regexp.internal.recompile;
+
+public class StudentAction extends ActionSupport{
+	private Student student;
+	private StudentServiceI studentServiceI;
+	PageInfo pageInfo;
+	private String option;
+	
+	
+	
+	
+	public String getOption() {
+		return option;
+	}
+	public void setOption(String option) {
+		this.option = option;
+	}
+	public StudentAction() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Student getStudent() {
+		return student;
+	}
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+	public StudentServiceI getStudentServiceI() {
+		return studentServiceI;
+	}
+	public void setStudentServiceI(StudentServiceI studentServiceI) {
+		this.studentServiceI = studentServiceI;
+	}
+	public PageInfo getPageInfo() {
+		return pageInfo;
+	}
+	public void setPageInfo(PageInfo pageInfo) {
+		this.pageInfo = pageInfo;
+	}
+
+	public String getAllStudent() throws Exception{
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String offset = request.getParameter("offset");
+		
+		if(offset==null){
+			offset="0";
+		}
+		pageInfo.setFirstResult(offset);
+//		HashMap<String,List> students = new HashMap<String,List>();
+		List<Student> students = studentServiceI.getAllStudent(pageInfo);
+		Timestamp data1 = new Timestamp(System.currentTimeMillis());
+		List<Integer> ages = new ArrayList<Integer>();
+		for(Student stu:students){
+		  Timestamp data = stu.getUBirthday();
+		  int a = (data1.getYear()-data.getYear());
+		  ages.add(a);
+		}
+		System.out.println(ages.get(2));
+//		students.add(age);
+		request.setAttribute("pageInfo", pageInfo);
+		request.setAttribute("students", students);
+		request.setAttribute("ages", ages);
+		return "getAllstu";	
+		
+	}
+	
+	 public String getStudentById() throws Exception{
+		   HttpServletRequest request =  ServletActionContext.getRequest();
+		   student = studentServiceI.getStudentById(student.getUId());
+		  // System.out.println("111"+getOption());
+		   if(option.equals("update")){
+			   List<Vita> vita = student.getVitas();
+			   ServletActionContext.getRequest().setAttribute("vitas", vita);
+			   return "update";
+		   }
+		   if(option.equals("addVita")){
+			   ServletActionContext.getRequest().setAttribute("student", student);
+			   return "";
+		   }
+		   return "none";
+		   
+		  }
+		  
+		  public String update() throws Exception{
+//			 System.out.println(student.getUName());
+//			 System.out.println(student.getUEmail());
+//			 System.out.println(student.getUBirthday());
+				MD5Code md5 =  new MD5Code();
+			  student.setUPwd(md5.getMD5ofStr(student.getUPwd()));			  
+			 studentServiceI.update(student);
+			 return "updatenow";
+		  }
+		  //取得最大id数+1用于前台自动增加id号
+		  public String getStudentMaxId() throws Exception {
+			  HttpServletRequest request =  ServletActionContext.getRequest();
+			  List<Student> maxId = studentServiceI.getStudentMaxId();
+			  Integer maxid = maxId.size()+1;
+			  request.setAttribute("maxid", maxid);
+			  return "";
+		  }
+		  //添加注册使用
+		  public String addStu() throws Exception{
+			  HttpServletRequest request =  ServletActionContext.getRequest();
+//			  //封装前台数据
+//			  List<Student> student = new ArrayList<Student>();
+			  Student student = new Student();
+			  student.setUId(Integer.valueOf(request.getParameter("UId")));
+			  student.setUName(request.getParameter("UName"));
+			  student.setUSex(request.getParameter("USex"));
+			  student.setUEmail(request.getParameter("UEmail"));
+			  student.setUPhone(request.getParameter("UPhone"));
+			  //处理MD5加密
+				MD5Code md5 =  new MD5Code();
+				student.setUPwd(md5.getMD5ofStr(request.getParameter("UPwd")));
+			//  处理日期类型
+			  String ubirthday = request.getParameter("UBirthday").substring(0,10);
+			  student.setUBirthday(Timestamp.valueOf(ubirthday+" 00:00:00"));	
+//			  student.add(stu);   
+			  
+			  studentServiceI.addStu(student);
+			  return "addnow";
+		  }
+		  
+	
+}

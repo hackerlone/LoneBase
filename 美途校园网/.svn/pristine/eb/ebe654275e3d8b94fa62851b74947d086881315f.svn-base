@@ -1,0 +1,55 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<%@taglib prefix="s" uri="/struts-tags" %>
+<%@taglib prefix="sx" uri="/struts-dojo-tags"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+   <base href="<%=basePath%>">
+    <title>My JSP 'reg.jsp' starting page</title>
+    
+    <link rel="stylesheet" type="text/css"  href="css/reg.css">
+    <sx:head parseContent="true"/>
+ 	<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+    <script type="text/javascript" src="js/ajaxfileupload.js"></script>
+     <script type="text/javascript" src="js/upload.js"></script>
+  </head>
+  <body>
+  <s:action name="vit_getAllVit" executeResult="false"/> 
+  
+    头像：<img id="headimg" src="upload/<s:property value="student.UTouxiang"/>"/>
+   <s:form id="uploadForm" action="upload_exec" method="post" enctype="multipart/form-data">
+    <input id= "file" type="file" name="myFile">
+	<input id="uploadBtn" type="button" value="修改头像" />
+   </s:form>
+
+   <s:form action="stu_update">
+    编号:<s:property value="student.UId"/><br/>
+   <s:textfield name="student.UName" label="姓名"/>
+   <s:textfield name="student.UPwd" label="密码"/>
+   <s:set name="sexlist"  value="#{'0':'男','1':'女'}" 
+  scope="request"/>
+    <s:radio name="student.USex" list="#request.sexlist" 
+   listKey="key" listValue="value" label="性别"/>
+         <sx:datetimepicker name="student.UBirthday" label="请选择出生日期" 
+       displayFormat="yyyy年MM月dd日"/>
+       <s:textfield name="student.UEmail" label="邮箱"/>
+       <s:textfield name="student.UPhone" label="电话"/><br />
+        <s:hidden name="student.UTouxiang" ></s:hidden>
+   	<s:submit value="修改"></s:submit>
+   </s:form>
+   
+           简历份数： <s:property value="student.vitas.size"/><br/>
+                  
+            <s:iterator value="#request.vitas" var="vita">          
+          	  简历修改:<a href="/MTCampus/vit_getVitaById.action?id=<s:property value="#vita.JId"/>&option=update">修改<s:property value="#vita.JId"/>号简历</a><br />
+          	  简历删除:<a href="MTCampus/vit_deleteVita.action?id=<s:property value="#vita.JId"/>&option=delete">删除<s:property value="#vita.JId"/>号简历</a><br />
+            </s:iterator>
+                   
+          	  简历添加:<a href="vita/add.jsp" >添加简历</a><br />
+          	 
+  </body>
+</html>

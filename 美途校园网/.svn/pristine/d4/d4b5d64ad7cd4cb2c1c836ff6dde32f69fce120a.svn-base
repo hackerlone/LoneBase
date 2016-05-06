@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" /> 
+	<include file="struts-Student.xml" />
+	<include file="struts-Enterprise.xml" />
+	<include file="struts-Vita.xml" />
+	<include file="struts-Job.xml" />
+	<include file="struts-Admin.xml" />
+	<include file="struts-Model.xml" />
+	
+	<package name="struts2" extends="struts-default">
+	
+		<global-results>
+			<result name="exception">/exception.jsp</result>
+			<result name="login">/login.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="exception"
+				exception="com.Campus.exception.BusinessException" />
+		</global-exception-mappings>
+
+
+		<action name="utils_*" class="utilsAction" method="{1}">
+		</action>
+
+		<action name="upload_*" class="uploadAction" method="{1}">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/pjpeg,image/x-png,
+					image/bmp,image/png,image/jpeg,image/gif,image/jpg</param>
+				<param name="maximumSize">3000 000</param>
+			</interceptor-ref>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,44 @@
+package com.Campus.dao;
+
+
+import com.Campus.dao.BaseDaoImp;
+import com.Campus.dao.JobDaoI;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import com.Campus.entity.Job;
+import com.Campus.entity.Job;
+import com.Campus.entity.Student;
+public class JobDao extends BaseDaoImp implements JobDaoI {
+	public List<Job> getAllJob() throws Exception {
+		return this.getSession().createQuery("From Job").list();
+	}
+	public Job getJobById(int id) throws Exception {
+		Session session = this.getSession();
+		Job job = (Job) session.load(Job.class, id);
+		return job;
+	}
+	//取id排序
+	public List getJobMaxId() throws Exception {
+		Session session = this.getSession();
+		//只查询id
+		return session.createSQLQuery("select z_id From Job order by z_id desc").list();
+	}
+	
+	public void update(Job job) throws Exception {
+        this.getHibernateTemplate().update(job);
+		return;
+	}
+
+//注册添加
+	public void addJob(Job job) throws Exception {
+		// TODO Auto-generated method stub
+		this.getHibernateTemplate().save(job);
+		return;
+	}
+	}
+	
+	
+
+

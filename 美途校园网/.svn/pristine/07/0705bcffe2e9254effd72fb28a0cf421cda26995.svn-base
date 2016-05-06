@@ -1,0 +1,14 @@
+package com.Campus.dao;
+import java.util.List;
+
+import com.Campus.entity.Admin;
+import com.Campus.dao.AdminDaoI;
+
+public class AdminDao extends BaseDaoImp implements AdminDaoI {
+	public List<Admin> getAllAdmin() throws Exception {
+		return this.getSession().createQuery("From Admin").list();
+	}
+
+	
+	
+}

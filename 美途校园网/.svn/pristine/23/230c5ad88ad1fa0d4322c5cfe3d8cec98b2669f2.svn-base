@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>111111111</title>
+
+	
+		
+		
+	</head>
+	<body>
+
+		<div class="bline_search">
+			<div id="search1" class="refineNavOn">
+				公司性质
+			</div>
+			<div id="xz" class="refineMenu">
+				<ul>
+					<li><a href="#">外资</a></li>
+					<li><a href="#">合资</a></li>
+					<li><a href="#">国企</a></li>
+					<li><a href="#">民营公司</a></li>
+					<li><a href="#">上市公司</a></li>
+					<li><a href="#">创业公司</a></li>
+					<li><a href="#">政府机关</a></li>
+					<li><a href="#">事业单位</a></li>
+					<li><a href="#">非营利机构</a></li>
+				</ul>
+			</div>
+			<div id="search2" class="refineNavOn">
+				月薪范围
+			</div>
+			<div id="yx" class="refineMenu">
+				<ul>
+					<li><a href="#">0-1500</a></li>
+					<li><a href="#">1500-1999</a></li>
+					<li><a href="#">2000-2999</a></li>
+					<li><a href="#">3000-4499</a></li>
+					<li><a href="#">4500-5999</a></li>
+					<li><a href="#">6000-7999</a></li>
+					<li><a href="#">8000-9999</a></li>
+					<li><a href="#">10000-9999999</a></li>				
+				</ul>
+			</div>
+			<div id="search3" class="refineNavOn">
+				公司人数
+			</div>
+			<div id="gm" class="refineMenu">
+				<ul>
+					<li><a href="#">0-50</a></li>
+					<li><a href="#">50-150</a></li>
+					<li><a href="#">150-500</a></li>
+					<li><a href="#">500-1000</a></li>
+					<li><a href="#">1000-5000</a></li>
+					<li><a href="#">5000-10000</a></li>
+					<li><a href="#">10000-999999</a></li>
+				</ul>
+			</div>
+
+
+			<div id="search4" class="refineNavOn">
+				学历要求
+			</div>
+			<div id="xl" class="refineMenu">
+				<ul name="">
+					<li><a href="#">初中及以下</a></li>
+					<li><a href="#">高中</a></li>
+					<li><a href="#">中专</a></li>
+					<li><a href="#">大专</a></li>
+					<li><a href="#">本科</a></li>
+					<li><a href="#">硕士</a></li>
+					<li><a href="#">博士</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+
+	</body>
+</html>

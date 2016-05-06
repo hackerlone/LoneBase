@@ -1,0 +1,87 @@
+<%@ page language="java" import="java.util.*"
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%> 
+<%@taglib prefix="s" uri="/struts-tags"%>
+<%@taglib prefix="sx" uri="/struts-dojo-tags"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="<%=basePath%>">
+		<title>My JSP 'reg.jsp' starting page</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reg.css">
+		<sx:head parseContent="true" />
+		<style type="text/css">
+		input[name="JJianjie"]{height:80px;}
+		
+		</style>
+		<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+		<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="js/upload.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var stusex = $("#stusex").val();
+				
+				$("option[name='"+stusex+"']").attr("selected",true);
+			});
+		</script>
+		
+	</head>
+	<body>
+	<s:action name="vit_getVitaMaxId" executeResult="false" />
+	
+	<s:action name="stu_getStudentById" executeResult="false" >
+		<s:param name="student.UId">1</s:param>
+		<s:param name="option">addVita</s:param>
+	</s:action>
+		头像：
+		<img id="headimg" src="upload/<s:property value="student.UTouxiang"/>" />
+		<s:form id="uploadForm" action="upload_exec" method="post"
+			enctype="multipart/form-data">
+			<input id="file" type="file" name="myFile">
+			<input id="uploadBtn" type="button" value="添加头像" />
+		</s:form>
+		
+		
+<s:form action="vit_addVita">
+    编号:
+  <input type="text" name="JId"
+				value="<s:property value="%{#request.maxidJId}"/>" readonly="readonly" />
+		<br />	
+		 <sx:datetimepicker name="#request.student.UBirthday" label="请选择出生日期"  
+       displayFormat="yyyy年MM月dd日"/><br />	
+	实习生编号：<input type="text" name="UId" value="<s:property value="%{#request.student.UId}"/>" readonly="readonly"/>	<br />	
+		名称：<input name="student.UName" value="<s:property  value="%{#request.student.UName}"/>"/><br/>
+		
+		
+		<s:hidden id="stusex" name="#request.student.USex"></s:hidden>
+		性别：<select name="student.USex">
+				<option value="0" name="0" label="男" >男</option>
+				<option value="1" name="1" label="女">女</option>
+			</select><br />	
+		
+		政治面貌:<select name="JFace">
+	          <option value="群众">群众</option>
+	          <option value="共青团员">共青团员</option>
+	          <option value="预备党员">预备党员</option>
+	          <option value="党员">党员</option>
+              </select><br />	
+                     毕业学校：<input type="text" name="JByxx"/><br />	
+                   专业：<input type="text" name="JZy"/><br />	
+                   学历:<input type="text" name="JXl"/><br />	
+                   工作经历:<input type="text" name="JGzjl"><br />	
+		邮箱<input type="text" name="student.UEmail" value="<s:property  value="%{#request.student.UEmail}"/>" /><br />	
+		电话：<input type="text" name="student.UPhone" value="<s:property  value="%{#request.student.UPhone}"/>" /><br />	
+		联系地址：<input type="text" name="JDizhi"/><br />	
+		简介<input type="text" name="JJianjie"><br />	
+
+		
+			<s:submit value="添加"></s:submit>
+		</s:form>
+	</body>
+</html>

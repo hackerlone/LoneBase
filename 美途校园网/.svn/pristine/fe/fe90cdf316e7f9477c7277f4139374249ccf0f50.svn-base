@@ -1,0 +1,44 @@
+package com.Campus.service;
+
+import com.Campus.page.PageInfo;
+
+import java.util.List;
+import com.Campus.entity.Job;
+import com.Campus.entity.Job;
+import com.Campus.entity.Student;
+import com.Campus.dao.JobDaoI;
+import com.Campus.dao.JobDaoI;
+import com.Campus.entity.Job;
+
+
+
+public class JobService implements JobServiceI {
+	private JobDaoI jobDaoI;
+
+	public JobDaoI getJobDaoI() {
+		return jobDaoI;
+	}
+
+	public void setJobDaoI(JobDaoI jobDaoI) {
+		this.jobDaoI = jobDaoI;
+	}
+	
+	
+	public  List<Job> getAllJob(PageInfo pageInfo)throws Exception{
+		 return jobDaoI.getPage("from Job", pageInfo);
+	 }
+	 public Job getJobById(int id)throws Exception{
+		  return jobDaoI.getJobById(id);
+	  }
+	 public void update(Job job) throws Exception{
+			jobDaoI.update(job);
+		}
+	 
+	 public List getJobMaxId() throws Exception {
+		 return jobDaoI.getJobMaxId();
+	 }
+	 public void addJob(Job job) throws Exception{
+		 jobDaoI.addJob(job);
+	 }
+
+}

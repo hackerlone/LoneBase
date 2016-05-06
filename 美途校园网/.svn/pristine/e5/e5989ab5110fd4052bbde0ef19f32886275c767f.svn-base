@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8" /> 
+	<package name="struts-student" extends="struts-default,struts2">
+		<action name="stu_*" class="stuAction" method="{1}">
+			<result name="getAllstu" type="">stu/show.jsp</result>
+			<result name="update">stu/update.jsp</result>
+			<result name="updatenow">stu/update.jsp</result>
+			<result name="addnow">msg.jsp</result>
+		</action>
+	</package>
+</struts>    

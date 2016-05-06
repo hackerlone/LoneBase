@@ -1,0 +1,47 @@
+<%@ page language="java" import="java.util.*"
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<%@taglib prefix="sx" uri="/struts-dojo-tags"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="<%=basePath%>">
+		<title>My JSP 'reg.jsp' starting page</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reg.css">
+		<sx:head parseContent="true" />
+		<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+		<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="js/upload.js"></script>
+	</head>
+	<body>
+	<s:action name="job_getJobMaxId" executeResult="false"></s:action>
+	<s:action name="qy_getEnterpriseById" executeResult="false" >
+		<s:param name="enterprise.QId">2</s:param>
+		<s:param name="option">addJob</s:param>
+	</s:action>
+	
+<s:form action="job_addJob">
+    职业编号:
+  <input type="text" name="ZId"
+				value="<s:property value="%{#request.maxidJId}"/>" readonly="readonly" />
+		<br />	
+      企业编号: <input type="text" name="QId" value="<s:property value="%{#request.enterprise.QId}"/>" readonly="readonly"/><br/>
+     企业名字：<input name="student.UName" value="<s:property  value="%{#request.enterprise.QName}"/>"readonly="readonly"/><br/>
+     职位名称：<input type="text" name="ZName" />
+  <sx:datetimepicker name="ZDate" label="请选择发布时间"  displayFormat="yyyy年MM月dd日"/>
+    入职地区<input type="text" name="ZArea" /><br />	
+    招聘人数：<input type="text" name="ZRenshu" /><br />	
+   掌握技能：<input type="text" name="ZZhineng" /><br />	
+    职位描述：<input type="text" name="ZMiaoshu" /><br />
+    薪资：<input type="text" name="ZXinzi" /><br />
+  <s:submit value="添加"></s:submit>
+</s:form>
+	</body>
+</html>

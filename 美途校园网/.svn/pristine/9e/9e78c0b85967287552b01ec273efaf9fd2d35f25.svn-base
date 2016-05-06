@@ -1,0 +1,118 @@
+package com.Campus.controller;
+
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.Campus.entity.Admin;
+import com.Campus.entity.Student;
+import com.Campus.page.PageInfo;
+import com.Campus.service.AdminServiceI;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class AdminAction extends ActionSupport{
+	private Admin admin;
+	private AdminServiceI adminServiceI;
+	PageInfo pageInfo;
+	
+	
+	
+
+	public Admin getAdmin() {
+		return admin;
+	}
+
+
+
+
+	public void setAdmin(Admin admin) {
+		this.admin = admin;
+	}
+
+
+
+
+	public AdminServiceI getAdminServiceI() {
+		return adminServiceI;
+	}
+
+
+
+
+	public void setAdminServiceI(AdminServiceI adminServiceI) {
+		this.adminServiceI = adminServiceI;
+	}
+
+
+
+
+	public PageInfo getPageInfo() {
+		return pageInfo;
+	}
+
+
+
+
+	public void setPageInfo(PageInfo pageInfo) {
+		this.pageInfo = pageInfo;
+	}
+
+
+
+
+	public String getAllUser() throws Exception{
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String offset = request.getParameter("offset");
+		
+		if(offset==null){
+			offset="0";
+		}
+		pageInfo.setFirstResult(offset);
+//		HashMap<String,List> students = new HashMap<String,List>();
+		List<Admin> admins = adminServiceI.getAllAdmin(pageInfo);
+//		Timestamp data1 = new Timestamp(System.currentTimeMillis());
+//		List<Integer> ages = new ArrayList<Integer>();
+//		for(Student stu:students){
+//		  Timestamp data = stu.getUBirthday();
+//		  int a = (data1.getYear()-data.getYear());
+//		  ages.add(a);
+//		}
+//		System.out.println(ages.get(2));
+//		students.add(age);
+		request.setAttribute("pageInfo", pageInfo);
+		request.setAttribute("admins", admins);
+//		request.setAttribute("ages", ages);
+		return "getAlladmin";	
+		
+	}
+	
+//	 public String getStudentById() throws Exception{
+//		   HttpServletRequest request =  ServletActionContext.getRequest();
+//		   int id = Integer.parseInt(request.getParameter("id"));
+//		   String option = request.getParameter("option");
+//		   student = studentServiceI.getStudentById(id);
+//		   if(option.equals("update")){
+			//   List<Course> courses = student.getCourses();
+//			   int[] courseids = new int[courses.size()]; 
+//			   for(int i = 0;i<courseids.length;i++){
+//				   courseids[i] = courses.get(i).getId();
+//			   }
+			   
+			   
+			  // ServletActionContext.getRequest().setAttribute("courseids", courseids);
+//			   return "update";
+//		   }
+//		   return "none";
+//		   
+//		  }
+		  
+//		  public String update() throws Exception{
+//		    return "";
+//		  }
+	
+	
+}

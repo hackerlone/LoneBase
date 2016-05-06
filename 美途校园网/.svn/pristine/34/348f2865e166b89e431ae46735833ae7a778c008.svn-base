@@ -1,0 +1,58 @@
+$(document).ready(function() {
+		$("#search1").click(function (){
+			if($("#search1").attr("class").toString()=="refineNavOn"){
+				$("#search1").removeClass("refineNavOn");
+				$("#search1").addClass("refineNavOff");
+				$("#xz").hide();
+			}else if($("#search1").attr("class").toString()=="refineNavOff"){
+				$("#search1").removeClass("refineNavOff");
+				$("#search1").addClass("refineNavOn");
+				$("#xz").show();
+			}
+		});
+		$("#search2").click(function (){
+			if($("#search2").attr("class").toString()=="refineNavOn"){
+				$("#search2").removeClass("refineNavOn");
+				$("#search2").addClass("refineNavOff");
+				$("#yx").hide();
+			}else{
+				$("#search2").removeClass("refineNavOff");
+				$("#search2").addClass("refineNavOn");
+				$("#yx").show()
+			}
+		});
+		$("#search3").click(function (){
+			if($("#search3").attr("class").toString()=="refineNavOn"){
+				$("#search3").removeClass("refineNavOn");
+				$("#search3").addClass("refineNavOff");
+				$("#gm").hide();
+			}else{
+				$("#search3").removeClass("refineNavOff");
+				$("#search3").addClass("refineNavOn");
+				$("#gm").show();
+			}
+		});
+		$("#search4").click(function (){
+			if($("#search4").attr("class").toString()=="refineNavOn"){
+				$("#search4").removeClass("refineNavOn");
+				$("#search4").addClass("refineNavOff");
+				$("#xl").hide();
+			}else{
+				$("#search4").removeClass("refineNavOff");
+				$("#search4").addClass("refineNavOn");
+				$("#xl").show();
+			}
+		});
+		$("#search5").click(function (){
+			if($("#search5").attr("class").toString()=="refineNavOn"){
+				$("#search5").removeClass("refineNavOn");
+				$("#search5").addClass("refineNavOff");
+				$("#rq").hide();
+			}else{
+				$("#search5").removeClass("refineNavOff");
+				$("#search5").addClass("refineNavOn");
+				$("#rq").show()
+			}
+		});
+		
+	});

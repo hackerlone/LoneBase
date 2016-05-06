@@ -1,0 +1,13 @@
+package com.Campus.dao;
+
+import java.util.List;
+
+import com.Campus.entity.Enterprise;
+
+public interface EnterpriseDaoI extends BaseDaoI{
+	public List<Enterprise> getAllEnterprise() throws Exception;
+	public Enterprise getEnterpriseById(int id) throws Exception;
+	public void update(Enterprise enterprise) throws Exception;
+	public List getEnterpriseMaxId() throws Exception;
+	public void addEnterprise(Enterprise enterprise) throws Exception;
+}
