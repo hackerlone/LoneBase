@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<import resource="applicationContext.xml" />
+
+	<bean id="AdminDao" class="gxa.dao.AdminDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="AdminService" class="gxa.service.AdminService">
+		<property name="adminDaoI" ref="AdminDao" />
+	</bean>
+	<bean id="adminAction" class="gxa.controller.AdminAction">
+		<property name="adminServiceI" ref="AdminService" />
+		<property name="pageInfo" ref="pageInfo" />
+	</bean>
+
+</beans>

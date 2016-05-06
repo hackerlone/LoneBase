@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<import resource="applicationContext.xml" />
+
+	<bean id="UserDao" class="gxa.dao.UserDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="UserService" class="gxa.service.UserService">
+		<property name="userDaoI" ref="UserDao" />
+	</bean>
+	<bean id="userAction" class="gxa.controller.UserAction">
+		<property name="userServiceI" ref="UserService" />
+		<property name="pageInfo" ref="pageInfo" />
+	</bean>
+
+</beans>
